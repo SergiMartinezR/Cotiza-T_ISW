@@ -3,3 +3,5 @@ djangorestframework
 pyyaml
 requests
 django-cors-headers
+coverage==5.2.1
+pillow

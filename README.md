@@ -1,4 +1,4 @@
-#COTIZA-T
+##COTIZA-T
 
 Proyecto para la asignatura Ingeniería de Software. Página web que ayuda a empleados, con pocos años de cotización para jubilarse, a encontrar un empleo temporal que les consiga esos años.
 Esta página web fue hecha con django y SQLite3 para el backend; así como, React, Node.js y bootstrap para el frontend.
