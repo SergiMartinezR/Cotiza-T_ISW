@@ -1,0 +1,128 @@
+.jobsBody .profileLeft .skills .skill{
+  margin-bottom: 14px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+  display: flex; 
+  align-items: center;
+  cursor: pointer;
+}
+.jobsBody .profileLeft .skills .skill:hover{
+  text-decoration: none !important;
+}
+.jobsBody .profileLeft .skills .skill .skillName{
+  margin-right: 10px;
+}
+.jobsBody .profileLeft .skills .skill .endorse{
+  font-weight: 450;
+  color: rgb(112, 112, 112);
+}
+.jobsBody .profileLeft .skills .skill .skillName:hover{
+  text-decoration: underline;
+}
+.jobsBody .profileLeft .skills .skill .endorse:hover{
+  text-decoration: underline;
+}
+.jobsBody .profileLeft .skills .skillBox{
+  display: flex;
+  width: 100%;
+  position: relative;
+  border-bottom: #d3e0f7 1.8px solid;
+  margin-bottom: 16px;
+  /* justify-content: space-between; */
+}
+.jobsBody .profileLeft .skills .skillBox .editDiv{
+  position: absolute;
+  top: 0;
+  right: 4px;
+  padding : 5px 10px;
+  border-radius: 50%;
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.jobsBody .profileLeft .skills .skillBox .editDiv:hover{
+  color: #0a66c2;
+  background-color: #d3e0f7;
+}
+.jobsBody .profileLeft .skills .showMore{
+  border: #d3e0f7 2px solid;
+  text-align: center;
+  color: #0a66c2;
+  cursor: pointer;
+  padding: 9px;
+  font-size: 13px;
+  margin-top: 30px;
+}
+.jobsBody .profileLeft .skills .showMore:hover{
+  background-color: #d3e0f7;
+}
+
+.modal-content .userAddAbout .skillUser{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: #0a66c2 1.3px solid;
+  padding-bottom: 12px;
+}
+.modal-content .userAddAbout .skillUser a{
+  color: black;
+}
+.modal-content .userAddAbout .skillUser h6{
+  margin-bottom: 0px;
+}
+.modal-content .userAddAbout .skillUser .desc{
+  font-weight: 340;
+  margin-top: 3px;
+  font-size: 14px;
+}
+.modal-content .userAddAbout .skillUser img{
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.modal-content .userAddAbout hr{
+  margin: 10px;
+}
+.modal-content .userAddAbout .skillHead{
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 15px;
+  font-weight: 400;
+}
+.modal-content .userAddAbout .endorseDisplay{
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+.modal-content .userAddAbout .endorseDisplay::-webkit-scrollbar {
+  display: none;
+}
+.modal-content .userAddAbout .displaySkillsArea{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  /* height: 300px; */
+  max-height: 230px;
+  overflow-y: scroll;
+}
+.modal-content .userAddAbout .displaySkillsArea div{
+  font-size: 13.8px;
+  border: white 1.4px solid;
+  padding: 6.6px 16px;
+  border-radius: 20px;
+  margin: 7px 6px;
+  color: white;
+  background-color: #297ed4;
+  display: flex;
+}
+.modal-content .userAddAbout .displaySkillsArea div i{
+  position: relative;
+  color: white;
+  right: 0px;
+  top: 0px;
+  transform: translateY(2px);
+  margin-left: 10px;
+}
+.modal-content .userAddAbout .displaySkillsArea div i:hover{
+  color: #d3e0f7;
+}

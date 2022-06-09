@@ -1,0 +1,97 @@
+.profPage .profileLeft{
+  width: 64vw;
+  margin-right: 60px;
+}
+.jobsBody .profileBanner {
+  /* border: #ccc 1.5px solid; */
+  width: 64vw;
+  background-color: white;
+  box-shadow: 0 4px 10px 3px #ccc;
+  padding-bottom: 24px;
+}
+.jobsBody .popularDomains{
+  width: 19vw;
+  /* float: right; */
+  height: fit-content;
+  border: #ccc 1px solid;
+  box-shadow: 0 4px 10px 3px #ccc;
+  background-color: white;
+  padding: 24px 22px 16px 22px;
+  font-family: 'Poppins';
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+.jobsBody .profileLevel{
+  width: 64vw;
+  /* max-height: 150px; */
+  margin-top: 50px;
+  background-color: white;
+  padding: 40px 35px;
+  border: #ccc 1px solid;
+  box-shadow: 0 4px 10px 3px #ccc;
+}
+.jobsBody .suggestions{
+  width: 19vw;
+  margin-top: 60px;
+  /* float: right; */
+  /* position: absolute; */
+  /* min-height: 600px; */
+  height: fit-content;
+  border: #ccc 1px solid;
+  box-shadow: 0 4px 10px 3px #ccc;
+  background-color: white;
+  padding: 24px 22px 16px 22px;
+  font-family: 'Poppins';
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  transform: translateY(-18px);
+}
+.jobsBody .dashboard{
+  width: 64vw;
+  padding: 40px 35px;
+  margin-top: 50px;
+  border: #ccc 1px solid;
+  /* box-shadow: 0 4px 10px 3px #ccc; */
+  background-color: white;
+  /* background-color: #c3f3f5; */
+  /* background-color: #e6f2fd; */
+  /* background-color: #e8f3ff; */
+  /* background-color: #d0e8ff; */
+  /* background-color: #e8f3ff; */
+  background-color: #dce6f1;
+  border-radius: 7px;
+  /* background-color: #a8d4ff; */
+}
+
+.jobsBody .experience{
+  border: #ccc 1px solid;
+  box-shadow: 0 4px 10px 3px #ccc;
+  background-color: white;
+  margin-top: 50px;
+  padding: 40px 35px;
+}
+
+.jobsBody .skills{
+  margin-bottom: 55px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

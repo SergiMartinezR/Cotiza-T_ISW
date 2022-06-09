@@ -1,2 +1,5 @@
 #Ignora la carpeta venv (del entorno virtual procurar llamar asi a su entorno virtual)
 venv
+ignore
+
+README.MD
