@@ -9,8 +9,9 @@ from .validators import validate_file_extension, validate_image_extension, valid
 
 class UserManager(BaseUserManager):
     def _create_user(self, email, name, last_name, password, is_staff, is_superuser, **extra_fields):
+        email=self.normalize_email(email),
         user = self.model(
-            email=email,
+            email = email,
             name=name,
             last_name=last_name,
             is_staff=is_staff,
