@@ -59,16 +59,16 @@ class Jobs extends Component {
               <div className="jobsTypeSelectLeft">
                 <div style={style1} onClick={() => this.typeOfJobSelected(1)}>
                   <i class="far fa-bookmark"></i>
-                  Saved Jobs
+                  Trabajos guardados
                 </div>
                 <div style={style2} onClick={() => this.typeOfJobSelected(2)}>
-                  Applied Jobs
+                  Aplicaciones de trabajo
                 </div>
-                <div style={style3} onClick={() => this.typeOfJobSelected(3)}>Posted Jobs</div>
+                <div style={style3} onClick={() => this.typeOfJobSelected(3)}>Trabajos publicados</div>
               </div>
               <div className="jobsTypeSelectRight">
                 <NavLink to="/postJob">
-                  <button>Post Job</button>
+                  <button>Publicar trabajo</button>
                 </NavLink>
               </div>
             </div>

@@ -45,7 +45,7 @@ class Signup extends Component {
           this.setState({
             loading : false,
             showAlert : true, 
-            alertData : 'User with this E-Mail already exists!', 
+            alertData : 'Ya existe un usuario con este E-mail!', 
             alertColor : 'danger'
           })
         }
@@ -55,7 +55,7 @@ class Signup extends Component {
         this.setState({
           loading : false,
           showAlert : true, 
-          alertData : 'Something went wrong!', 
+          alertData : 'Algo salio mal!', 
           alertColor : 'danger'
         })
       })
@@ -99,7 +99,7 @@ class Signup extends Component {
         this.setState({loading : false});
         this.setState({
           showAlert : true, 
-          alertData : 'Something went wrong!', 
+          alertData : 'Algo salio mal!', 
           alertColor : 'danger'
         })      
       })
@@ -137,7 +137,7 @@ class Signup extends Component {
         if(res.status === 202){
           this.setState({
             showAlert : true, 
-            alertData : 'OTP has been sent to your mobile number', 
+            alertData : 'OTP ha sido enviado a tu numero celular', 
             alertColor : 'success'
           })
         }
@@ -153,7 +153,7 @@ class Signup extends Component {
         // }
         this.setState({
           showAlert : true, 
-          alertData : 'Phone number already linked to an account', 
+          alertData : 'Este numero celular ya esta relacionado con otra cuenta', 
           alertColor : 'danger'
         })
         // this.setState({loading : false});
@@ -169,7 +169,7 @@ class Signup extends Component {
     // this.setState({loading : true});
     this.setState({
       showAlert : true, 
-      alertData : 'Please wait, while we verify your phone number...', 
+      alertData : 'Por favor espera en lo que verificamos tu numero celular...', 
       alertColor : 'success'
     })
     axios.post('/user/account/verify/',verifyOtpData)
@@ -179,9 +179,10 @@ class Signup extends Component {
         if(res.status === 200){
           this.setState({
             showAlert : true, 
-            alertData : 'Phone number verified successfully!', 
+            alertData : 'El numero celular ha sido verificado con exito!', 
             alertColor : 'success'
           })
+          this.setState({redirect : '4'});
         }
       })
       .catch((err)=>{
@@ -190,14 +191,14 @@ class Signup extends Component {
         if(err.response.status === 400){
           this.setState({
             showAlert : true, 
-            alertData : 'OTP expired!', 
+            alertData : 'OTP expirado!', 
             alertColor : 'danger'
           })
         }
         if(err.response.status === 403){
           this.setState({
             showAlert : true, 
-            alertData : 'Wrong OTP entered!', 
+            alertData : 'OTP equivocado!', 
             alertColor : 'danger'
           })
         }
@@ -220,6 +221,9 @@ class Signup extends Component {
     }
     if(this.state.redirect === '3'){
       return <Redirect to='/userSignup/otpVerification'/>
+    }
+    if(this.state.redirect === '4'){
+      return <Redirect to='/userLogin'/>
     }
 
     let AlertData = null;

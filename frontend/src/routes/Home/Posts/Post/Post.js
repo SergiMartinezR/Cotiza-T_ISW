@@ -188,7 +188,7 @@ class Post extends Component {
           is_liked: false,
           likes_count: 0,
           id: commentId,
-          posted_at: 'just now',
+          posted_at: 'Justo ahora',
           comment_count: 0,
           author_name: this.props.data.viewer_name,
           author_tagline: this.props.data.viewer_tagline,
@@ -412,7 +412,7 @@ class Post extends Component {
               onClick={this.showFullText}
               className="readmore"
             >
-              ...see more
+              Ver mas...
             </h6>
           </div>
         </div>
@@ -440,7 +440,7 @@ class Post extends Component {
               ,
             </span>
             <span onClick={this.displayCommentSection} className="comments">
-              {postData.comment_count} Comments
+              {postData.comment_count} Comentarios
             </span>
           </h6>
         </div>
@@ -452,7 +452,7 @@ class Post extends Component {
 
           <div onClick={this.displayCommentSection} className="commentIcon">
             <i class="far fa-comment-dots"></i>
-            <h6>Comment</h6>
+            <h6>Comentar</h6>
           </div>
         </div>
 

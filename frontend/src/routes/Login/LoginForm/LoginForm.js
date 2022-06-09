@@ -80,9 +80,9 @@ class LoginForm extends Component {
 
     return (
       <form onSubmit={this.handleSubmit}>
-        <h5 className="formOneHead">We've missed you!</h5>
+        <h5 className="formOneHead">Te hemos extrañado!</h5>
         <div className="form-group">
-          <label>E-Mail :</label>
+          <label>E-Mail:</label>
           <input
             type="email"
             className={
@@ -91,7 +91,7 @@ class LoginForm extends Component {
                 : "form-control"
             }
             name="email"
-            placeholder="Enter your email"
+            placeholder="Ingresa tu E-Mail"
             onChange={this.handleChange}
             required
           />
@@ -101,12 +101,12 @@ class LoginForm extends Component {
         </div>
 
         <div className="form-group">
-          <label>Password :</label>
+          <label>Contraseña:</label>
           <input
             type="password"
             className={formErrors.password.length > 0 ? "form-control error" : "form-control"}
             name="password"
-            placeholder="Password"
+            placeholder="Contraseña"
             onChange={this.handleChange}
             required
           />
@@ -115,13 +115,13 @@ class LoginForm extends Component {
             <span className="errorMessage">{formErrors.password}</span>
           )}
           <h6 className="forgotPass" onClick={this.forgotPass}>
-            Forgot password?
+            Olvido la contraseña?
           </h6>
         </div>
 
-        <button className='btn btn-dark' style={{width:'100%'}} type="submit">Sign In</button>
+        <button className='btn btn-dark' style={{width:'100%'}} type="submit">Ingresar</button>
         <Link to="/userSignup/register" className="link">
-          <h6 className='newAccount'>Create a new account?</h6>
+          <h6 className='newAccount'>Crear una nueva cuenta?</h6>
         </Link>
       </form>
     );

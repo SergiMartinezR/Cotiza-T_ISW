@@ -63,7 +63,7 @@ class CreatePost extends Component {
         if (res.status === 201) {
           this.setState({
             showAlert: true,
-            alertData: "The post was successfully posted!",
+            alertData: "El post fue creado exitosamente!",
             alertColor: "success",
           });
           setTimeout(()=>{
@@ -75,7 +75,7 @@ class CreatePost extends Component {
         console.log(err);
         this.setState({
           showAlert: true,
-          alertData: "Something went wrong!",
+          alertData: "Algo salio mal!",
           alertColor: "danger",
         });
       });
@@ -118,13 +118,13 @@ class CreatePost extends Component {
                 }}
                 class="fas fa-edit"
               ></i>
-              Create post
+              Crear post
             </h6>
           </div>
           <div className="createPostBottom">
             <div onClick={this.showModal} className="button">
               <i style={{ color: "#70b5f9" }} class="fas fa-camera-retro"></i>
-              Photo
+              Foto
             </div>
             <div onClick={this.showModal} className="button">
               <i style={{ color: "#e7a33e" }} class="fas fa-video"></i>
@@ -132,7 +132,7 @@ class CreatePost extends Component {
             </div>
             <div onClick={this.showModal} className="button">
               <i style={{ color: "#7FC15E" }} class="fas fa-camera-retro"></i>
-              Article
+              Articulo
             </div>
             <div onClick={this.showModal} className="button">
               <i class="fas fa-plus-square"></i>

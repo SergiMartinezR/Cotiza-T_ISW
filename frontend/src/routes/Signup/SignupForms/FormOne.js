@@ -111,7 +111,7 @@ class FormOne extends Component {
   render() {
     return (
       <>
-        <h5 className="formOneHead">Make the most of your professional life</h5>
+        <h5 className="formOneHead">Termina de cotizar ante tu institucion de seguridad social</h5>
         <form className="signupFormOne" onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Email:</label>
@@ -122,7 +122,7 @@ class FormOne extends Component {
               value={this.state.input.old_password}
               onChange={this.handleChange}
               className="form-control"
-              placeholder="Enter your e-mail id"
+              placeholder="Ingresa tu E-mail"
               id="name"
               required
             />
@@ -131,14 +131,14 @@ class FormOne extends Component {
           </div>
 
           <div className="form-group">
-            <label>Password:</label>
+            <label>Contraseña:</label>
             <input
               type="password"
               name="password"
               value={this.state.input.password}
               onChange={this.handleChange}
               className="form-control"
-              placeholder="Enter New password"
+              placeholder="Ingresa tu contraseña"
               id="password"
               required
             />
@@ -147,14 +147,14 @@ class FormOne extends Component {
           </div>
 
           <div className="form-group">
-            <label>Confirm Password:</label>
+            <label>Confirma tu contraseña:</label>
             <input
               type="password"
               name="confirm_password"
               value={this.state.input.confirm_password}
               onChange={this.handleChange}
               className="form-control"
-              placeholder="Enter confirm password"
+              placeholder="Ingresa tu contraseña otra vez"
               id="confirm_password"
               required
             />
@@ -170,7 +170,7 @@ class FormOne extends Component {
           </div> */}
 
           <button type="submit" className="btn btn-dark">
-            Confirm
+            Confirmar
           </button>
         </form>
       </>

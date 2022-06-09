@@ -107,7 +107,7 @@ class ProfileSidebox extends Component {
 
           <div style={{ width: "100%", margin: "16px 0px" }}>
             <div className="profileVisits">
-              <div>Connections : </div>
+              <div>Conexiones : </div>
               <div style={{ color: "blue", fontSize: "13.3px" }}>
                 {/* {this.state.details.connection} */}
                 {this.props.data.connections}
@@ -115,7 +115,7 @@ class ProfileSidebox extends Component {
             </div>
 
             <div className="profileVisits">
-              <div>Bookmarked Items : </div>
+              <div>Items : </div>
               <div style={{ color: "blue", fontSize: "13.3px" }}>
                 {/* {this.state.details.bookmarks} */}
                 {this.props.data.saved}
@@ -135,7 +135,7 @@ class ProfileSidebox extends Component {
             </div> */}
             <div className="savedPosts">
               <i class="fas fa-bookmark"></i>
-              <h6 className="saved">Saved Posts</h6>
+              <h6 className="saved">Post guardados</h6>
             </div>
           </NavLink>
         </>

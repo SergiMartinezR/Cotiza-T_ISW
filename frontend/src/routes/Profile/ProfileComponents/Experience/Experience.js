@@ -102,7 +102,7 @@ class Experience extends Component {
     };
 
     if(details.headline){
-      this.props.editTagline(`${details.position} at ${details.industry}`);
+      this.props.editTagline(`${details.position} en ${details.industry}`);
     }
 
     let token = localStorage.getItem("accessToken");
@@ -144,7 +144,7 @@ class Experience extends Component {
     console.log(newEduData);
 
     if(details.headline){
-      this.props.editTagline2(`Student at ${details.institute}`);
+      this.props.editTagline2(`Estudia en ${details.institute}`);
     }
 
     let token = localStorage.getItem("accessToken");
