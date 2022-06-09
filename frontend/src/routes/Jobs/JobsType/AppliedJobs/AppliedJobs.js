@@ -188,7 +188,7 @@ class AppliedJobs extends Component {
 
     return (
       <div className="jobsDisplay">
-        <h6 className="savedJobsHeader">Applied Jobs</h6>
+        <h6 className="savedJobsHeader">Aplicaciones de trabajo</h6>
         <div className="savedJobsDisplay">{appliedJobsData}</div>
       </div>
     );

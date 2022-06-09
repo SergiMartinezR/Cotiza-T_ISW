@@ -215,24 +215,24 @@ class LandingPage extends Component {
 
         <div className="addBoxPost">
           <div className="text">
-            <h6 className="needEmp">Does your company needs good employees?</h6>
+            <h6 className="needEmp">Tu compañia necesita empleados?</h6>
             <h6 className="needEmpSub">
-              To post jobs visit subpage for employees
+              Para publicar trabajos visita la subpagina Publicar
             </h6>
           </div>
           <div>
             <NavLink to='/userSignup/register'>
-            <button className="btn btn-light">Post a Job</button>
+            <button className="btn btn-light">Publicar un trabajo</button>
             </NavLink>
           </div>
         </div>
 
         <footer className="footer">
           <div className="footer1">
-            <h6>About</h6>
+            <h6>Acerca de</h6>
             <h6>FAQ</h6>
-            <h6>Policies</h6>
-            <h6>Help</h6>
+            <h6>Politicas</h6>
+            <h6>Ayuda</h6>
           </div>
           <div className="footer2">
             <i class="fab fa-linkedin-in"></i>
@@ -240,7 +240,7 @@ class LandingPage extends Component {
             <i class="fab fa-facebook-f"></i>
           </div>
           <div className='footer3'>
-          &copy;2008-2020 by findit.com
+          &copy;2022-2022 by cotiza-T
           </div>
         </footer>
       </div>

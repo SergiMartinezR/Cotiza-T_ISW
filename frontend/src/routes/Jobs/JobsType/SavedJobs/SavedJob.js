@@ -31,7 +31,7 @@ class SavedJob extends Component {
             </div>
             <div className="savedJobSecond">
               <h6 className="savedJobDomain">
-                {this.props.data.title} will be removed
+                {this.props.data.title} sera removido
               </h6>
             </div>
           </NavLink>

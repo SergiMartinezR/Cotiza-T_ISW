@@ -177,7 +177,7 @@ class PostedJobs extends Component {
 
     return (
       <div className="jobsDisplay">
-        <h6 className="savedJobsHeader">Posted Jobs</h6>
+        <h6 className="savedJobsHeader">Trabajos publicados</h6>
         <div className="savedJobsDisplay">{savedJobsData}</div>
       </div>
     );

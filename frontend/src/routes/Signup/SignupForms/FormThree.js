@@ -25,7 +25,7 @@ class FormThree extends Component {
     if(this.state.phoneNumber.length != 10){
       let alertDetails = {
         alertColor : 'danger',
-        alertData : 'Enter a valid Phone Number!'
+        alertData : 'Ingresa un numero de celular basico!'
       }
       this.props.showAlert(alertDetails);
       return;
@@ -58,7 +58,7 @@ class FormThree extends Component {
       OtpBox = (
         <>
           <div className="otpInputDiv">
-            <label>Enter OTP:</label>
+            <label>Ingresar OTP:</label>
             <OtpInput
               value={this.state.otp}
               onChange={this.handleOtpChange}
@@ -71,7 +71,7 @@ class FormThree extends Component {
             style={{ marginTop: '20px', borderRadius: "0px", fontSize: "13px", width: "100%" }}
             className="btn btn-success"
           >
-            Verify OTP
+            Verificar OTP
           </button>
         </>
       );
@@ -79,10 +79,10 @@ class FormThree extends Component {
 
     return (
       <>
-        <h5 className="formOneHead">Verify your Phone Number</h5>
+        <h5 className="formOneHead">Verifica tu numero celular</h5>
 
         <div className="form-group">
-          <label>Phone Number:</label>
+          <label>Numero celular:</label>
           <input
             style={{ fontSize: "14px" }}
             type="number"
@@ -90,7 +90,7 @@ class FormThree extends Component {
             value={this.state.phoneNumber}
             onChange={this.handleChange}
             className="form-control"
-            placeholder="Enter your phone number"
+            placeholder="Ingresa tu numero celular"
             id="phoneNumber"
             required
           />
@@ -103,7 +103,7 @@ class FormThree extends Component {
           style={{ borderRadius: "0px", fontSize: "13px", width: "100%" }}
           className="btn btn-success"
         >
-          Send OTP
+          Enviar OTP
         </button>
 
         {OtpBox}

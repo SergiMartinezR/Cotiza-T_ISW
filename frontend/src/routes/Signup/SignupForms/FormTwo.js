@@ -80,11 +80,11 @@ class FormTwo extends Component {
       case "firstName":
         formErrors.firstName =
           (value.length < 3 && value.length > 0
-            ? "minimum 3 characaters required"
+            ? "se requieren al menos 3 caracteres"
             : "") ||
           (formErrors.firstName = nameRegex.test(value)
             ? ""
-            : "only characters allowed!");
+            : "solo caracteres estan permitidos!");
         break;
 
       case "lastName":
@@ -95,8 +95,8 @@ class FormTwo extends Component {
           }
         }
         formErrors.lastName =
-          (spaceNum > 1 ? "more than one space prohibited" : "") ||
-          (value.length < 3 ? "minimum 3 characaters required" : "") ||
+          (spaceNum > 1 ? "mas de un espacio esta prohibido" : "") ||
+          (value.length < 3 ? "se requieren al menos 3 caracteres" : "") ||
           (formErrors.lastName = lastnameRegex.test(value)
             ? ""
             : "only characters allowed!");
@@ -104,17 +104,17 @@ class FormTwo extends Component {
 
       case "location":
         formErrors.location =
-          value.length < 3 ? "minimum 3 characters required" : "";
+          value.length < 3 ? "se requieren al menos 3 caracteres" : "";
         break;
 
       case "position":
         formErrors.position =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "se requieren al menos 3 caracteres" : "";
         break;
 
       case "industry":
         formErrors.industry =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "se requieren al menos 3 caracteres" : "";
         break;
 
       default:
@@ -133,7 +133,7 @@ class FormTwo extends Component {
 
     return (
       <>
-        <h5 className="formOneHead formTwoHead">Personal Details</h5>
+        <h5 className="formOneHead formTwoHead">Detalles personales</h5>
         {/* <i class="fas fa-plus-circle" onClick={this.handleClick} style={{cursor:'pointer'}}></i>
         <input type="file" id="file" ref="fileUploader" style={{display: "none"}}/> */}
         <form
@@ -143,7 +143,7 @@ class FormTwo extends Component {
         >
           <div className="form-group">
             <div>
-              <label>Firstname : </label>
+              <label>Nombre:</label>
               <input
                 type="text"
                 autoComplete="off"
@@ -153,7 +153,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="firstName"
-                placeholder="First Name"
+                placeholder="Nombre"
                 onChange={this.handleChange}
                 required
               />
@@ -165,7 +165,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Lastname :</label>
+              <label>Apellidos:</label>
               <br></br>
               <input
                 type="text"
@@ -176,7 +176,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="lastName"
-                placeholder="Last Name"
+                placeholder="Apellidos"
                 onChange={this.handleChange}
                 required
               />
@@ -188,7 +188,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Location :</label>
+              <label>Localizacion:</label>
               <br></br>
               <input
                 type="text"
@@ -199,7 +199,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="location"
-                placeholder="Your location"
+                placeholder="Tu localizacion"
                 onChange={this.handleChange}
                 required
               />
@@ -211,7 +211,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Position :</label>
+              <label>Puesto:</label>
               <br></br>
               <input
                 type="text"
@@ -221,7 +221,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="position"
-                placeholder="Your position"
+                placeholder="Tu puesto"
                 onChange={this.handleChange}
                 required
               />
@@ -233,7 +233,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Institute/Industry :</label>
+              <label>Instituto/Industria :</label>
               <br></br>
               <input
                 type="text"
@@ -244,7 +244,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="industry"
-                placeholder="Enter Institute or Industry"
+                placeholder="Ingresa un instituto o industria"
                 onChange={this.handleChange}
                 required
               />
@@ -289,7 +289,7 @@ class FormTwo extends Component {
               style={{ marginRight: "40px" }}
             >
               <div>
-                <label>Start-Year :</label>
+                <label>Fecha de inicio:</label>
                 <br></br>
                 <DatePicker
                   selected={this.state.startDate}
@@ -308,7 +308,7 @@ class FormTwo extends Component {
               style={{ marginRight: "40px" }}
             >
               <div>
-                <label>End-Year :</label>
+                <label>Fecha final:</label>
                 <br></br>
                 <DatePicker
                   selected={this.state.endDate}
@@ -375,7 +375,7 @@ class FormTwo extends Component {
           </div>
 
           <div className="form-group">
-            <label>Profile Img : </label>
+            <label>Imagen de perfil: </label>
             <br></br>
             <div>
               <input
@@ -399,7 +399,7 @@ class FormTwo extends Component {
               }}
               // defaultChecked={!this.state.isStudent}
             />
-            <label>I'm a student</label>
+            <label>Soy un estudiante</label>
           </div>
 
           <div style={{ textAlign: "center" }}>
@@ -408,13 +408,13 @@ class FormTwo extends Component {
               className="btn btn-dark"
               style={{ width: "50%" }}
             >
-              Sign up
+              Ingresar
             </button>
             <Link to="/userLogin" className="link">
               <h6
                 style={{ fontSize: "12px", marginTop: "4px", color: "black" }}
               >
-                Already have an account? Sign In!
+                Ya tienes una cuenta? Inicia sesion!
               </h6>
             </Link>
           </div>

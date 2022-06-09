@@ -70,20 +70,7 @@ class LoggedIn extends Component {
             {/* <h6>MEN</h6> */}
             <i class="fas fa-2x fa-home"></i>
             <br></br>
-            <h6>Home</h6>
-          </li>
-        </NavLink>
-
-        <NavLink
-          className="NavLinkk"
-          to="/network"
-          activeStyle={{ borderBottom: "black 3px solid", color: "black" }}
-        >
-          <li className="nav-item">
-            {/* <h6>MEN</h6> */}
-            <i class="fas fa-user-friends"></i>
-            <br></br>
-            <h6>Network</h6>
+            <h6>Inicio</h6>
           </li>
         </NavLink>
 
@@ -96,19 +83,7 @@ class LoggedIn extends Component {
             {/* <h6>MEN</h6> */}
             <i class="fas fa-briefcase"></i>
             <br></br>
-            <h6>Jobs</h6>
-          </li>
-        </NavLink>
-
-        <NavLink
-          className="NavLinkk"
-          to="/message/#"
-          activeStyle={{ borderBottom: "black 3px solid", color: "black" }}
-        >
-          <li className="nav-item">
-            {/* <h6>WOMEN</h6> */}
-            <i class="fas fa-comment-alt"></i>
-            <h6>Messaging</h6>
+            <h6>Trabajos</h6>
           </li>
         </NavLink>
 
@@ -151,22 +126,22 @@ class LoggedIn extends Component {
                   <h6 className="status">{tagline}</h6>
                 </div>
               </div>
-              <button className="viewProfile">View Profile</button>
+              <button className="viewProfile">Ver perfil</button>
             </NavLink>
             <div className="dropAccount">
-              <h6>ACCOUNT</h6>
+              <h6>CUENTA</h6>
             </div>
             <NavLink disable to="/profile">
-              <h6 className="dropAccountOptions">Settings & Privacy</h6>
+              <h6 className="dropAccountOptions">Ajustes & Privacidad</h6>
             </NavLink>
             <NavLink to="/jobs">
-              <h6 className="dropAccountOptions">My Posted Jobs</h6>
+              <h6 className="dropAccountOptions">Mis trabajos</h6>
             </NavLink>
             <div className="dropAccount">
-              <h6>MANAGE</h6>
+              <h6>CONTROL</h6>
             </div>
             <h6 onClick={this.signOut} className="dropAccountOptions">
-              SIGN OUT
+              CERRAR SESION
             </h6>
           </div>
         </li>
@@ -183,17 +158,17 @@ class LoggedIn extends Component {
           >
             <i class="fas fa-th"></i>
             <br></br>
-            <h6>Work</h6>
+            <h6>Panel</h6>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <div className="dropAccount">
-              <h6>CREATE</h6>
+              <h6>CREAR</h6>
             </div>
             <NavLink to="/postJob">
-              <h6 className="dropAccountOptions">Post a job</h6>
+              <h6 className="dropAccountOptions">Publicar un trabajo</h6>
             </NavLink>
             <NavLink to="/createPage">
-              <h6 className="dropAccountOptions">Create Company page +</h6>
+              <h6 className="dropAccountOptions">Crear una pagina de compañia</h6>
             </NavLink>
           </div>
         </li>

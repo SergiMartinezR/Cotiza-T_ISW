@@ -187,7 +187,7 @@ class SearchDisplay extends Component {
             </NavLink>
 
             <NavLink className="connectButton" to={`/user/${user.profile_id}`}>
-              Connect
+              Conectar
             </NavLink>
           </div>
         );
@@ -218,7 +218,7 @@ class SearchDisplay extends Component {
               <div className="footer">
                 <h6 className="time">{job.posted_at}</h6>
                 <h6 className="applicants">
-                  {job.num_of_applicants} applicants
+                  {job.num_of_applicants} postulantes
                 </h6>
               </div>
             </NavLink>
@@ -236,8 +236,8 @@ class SearchDisplay extends Component {
     if (userSearchDisplay === null && jobSearchDisplay === null) {
       displayAllData = (
         <h6 style={{color:'grey',textAlign:'center',fontWeight:'400',marginTop:'160px'}}>
-          <i>We couldn't find anything!</i><br/>
-          <i>Dang! but don't you worry, we are improving every day</i>
+          <i>No pudimos encontrar nada!</i><br/>
+          <i>Chale! pero no te preocupes, estamos mejorando cada dia</i>
         </h6>
       );
     }
@@ -317,7 +317,7 @@ class SearchDisplay extends Component {
       <div>
         <Navbar shadow={true} />
         <div className="body feedBody searchBody">
-          <h5 className="searchHead">Results based on your search</h5>
+          <h5 className="searchHead">Resultados basado en tu busqueda</h5>
 
           {displayAllData}
         </div>

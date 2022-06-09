@@ -154,14 +154,14 @@ class Comment extends Component {
         }}
         className="like"
       >
-        Like
+        Me gusta
       </span>
     );
     // if (!this.state.isLiked) {
     if (!this.state.isLiked) {
       likeButton = (
         <span onClick={this.likeComment} className="like">
-          Like
+          Me gusta
         </span>
       );
     }
@@ -174,7 +174,7 @@ class Comment extends Component {
           <input
             value={this.state.newReply}
             type="text"
-            placeholder="Add a reply..."
+            placeholder="Añadir respuesta."
             onChange={(e) => this.setState({ newReply: e.target.value })}
           />
         </form>
@@ -257,7 +257,7 @@ class Comment extends Component {
             </span>
             <span style={{ fontWeight: "300" }}>|</span>
             <span onClick={this.openReplyBox} className="like">
-              Reply
+              Responder
             </span>
             <span
               className="commentLikeNum"
@@ -265,7 +265,7 @@ class Comment extends Component {
               style={{ cursor: "pointer" }}
             >
               {/* {comment.comment.numReplies} replies */}
-              {this.props.comment.replies.length} replies
+              {this.props.comment.replies.length} respuestas
             </span>
           </div>
 

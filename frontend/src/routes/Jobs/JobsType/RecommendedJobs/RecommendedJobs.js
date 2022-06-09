@@ -109,7 +109,7 @@ class RecommendedJobs extends Component {
 
     return (
       <div className="jobsDisplay">
-        <h6 className="savedJobsHeader">Recommended for you</h6>
+        <h6 className="savedJobsHeader">Recomendados para ti</h6>
         <div className="recommendedJobsDisplay">{displayData}</div>
       </div>
     );

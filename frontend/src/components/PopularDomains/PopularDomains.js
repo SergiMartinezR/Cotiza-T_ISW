@@ -40,38 +40,38 @@ class PopularDomains extends Component {
     return (
       <>
         <div className='popularDomains2'>
-        <h6 className="heading">Trending Domains</h6>
+        <h6 className="heading">Podria interesarte</h6>
 
         <h6 className="domain">
           <NavLink to="/search/web">#Web-Developers</NavLink>
         </h6>
-        <h6 className="domainPeople">38,296 people</h6>
+        <h6 className="domainPeople">38,296 personas</h6>
 
         <h6 className="domain">
           <NavLink to="/search/app">#App-Developers</NavLink>
         </h6>
-        <h6 className="domainPeople">21,847 people</h6>
+        <h6 className="domainPeople">21,847 personas</h6>
 
         <h6 className="domain">
           <NavLink to="/search/ml">#Machine Learning</NavLink>
         </h6>
-        <h6 className="domainPeople">13,226 people</h6>
+        <h6 className="domainPeople">13,226 personas</h6>
 
         <h6 className="domain">
           <NavLink to="/search/ui">#UI/UX Designer</NavLink>
         </h6>
-        <h6 className="domainPeople">26,836 people</h6>
+        <h6 className="domainPeople">26,836 personas</h6>
 
         <h6 className="domain">
           <NavLink to="/search/aspnet">#ASP .NET Developers</NavLink>
         </h6>
-        <h6 className="domainPeople">14,863 people</h6>
+        <h6 className="domainPeople">14,863 personas</h6>
 
         <h6 className="domain">
           <NavLink to="/search/Unity">#Unity 3D</NavLink>
         </h6>
-        <h6 className="domainPeople">7,736 people</h6>
-        </div>
+        <h6 className="domainPeople">7,736 personas</h6>
+        </div>  
       </>
     );
   }
