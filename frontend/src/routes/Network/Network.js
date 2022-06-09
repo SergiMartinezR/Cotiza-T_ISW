@@ -61,10 +61,10 @@ class Network extends Component {
                   Invitations
                 </div>
                 <div style={style2} onClick={() => this.typeOfJobSelected(2)}>
-                  Connections
+                  Conexiones
                 </div>
                 <div style={style3} onClick={() => this.typeOfJobSelected(3)}>
-                  Pending
+                  Pendiente
                 </div>
               </div>
               {/* <div className="jobsTypeSelectRight">

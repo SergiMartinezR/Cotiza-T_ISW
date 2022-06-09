@@ -47,7 +47,7 @@ class PeopleLiked extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userAddAbout">
-            <h6 className="skillHead">People who liked the post</h6>
+            <h6 className="skillHead">Gente a la que le gust&oacute; la publicaci&oacute;n</h6>
             <hr />
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
 

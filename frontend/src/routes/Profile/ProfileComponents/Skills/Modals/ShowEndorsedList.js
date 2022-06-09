@@ -25,7 +25,7 @@ class ShowEndorsedList extends Component {
                 {user.firstName} {user.lastName}
               </h6>
               <h6 className="desc">
-                {user.position} at {user.industry}
+                {user.position} en {user.industry}
               </h6>
             </NavLink>
           </div>

@@ -12,7 +12,7 @@ class EditExperience extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userAddAbout">
-            <h5>Edit Experience!</h5>
+            <h5>Edita tu experiencia</h5>
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
             <form onSubmit={this.formSubmit}>
               <div class="form-group">
@@ -31,10 +31,10 @@ class EditExperience extends Component {
               </div>
               <div className="modalBottom">
                 <h6 className="userCloseButton" onClick={this.props.hideModal}>
-                  Close
+                  Cerrar
                 </h6>
                 <button type="submit" className="userSaveButton">
-                  Save
+                  Guardar
                 </button>
               </div>
             </form>

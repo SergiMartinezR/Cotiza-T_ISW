@@ -11,7 +11,7 @@ class PostJob extends Component {
   state = {
     isLoading: false,
     alertColor: "success",
-    alertData: "You've successfully posted new job",
+    alertData: "Publicación exitosa",
     showAlert: false,
   };
 
@@ -51,7 +51,7 @@ class PostJob extends Component {
           this.setState({
             showAlert: true,
             alertColor: "success",
-            alertData: "You've successfully posted new job!",
+            alertData: "Publicación exitosa",
           });
           setTimeout(() => {
             this.setState({
@@ -65,7 +65,7 @@ class PostJob extends Component {
         this.setState({
           showAlert: true,
           alertColor: "danger",
-          alertData: "Something went wrong!",
+          alertData: "Algo malió sal",
         });
         setTimeout(() => {
           this.setState({
@@ -97,9 +97,9 @@ class PostJob extends Component {
         <Navbar />
         {alertData}
         <div className="body postJobsBody">
-          <h6 className="postJobHeadLine">Find a great hire, fast</h6>
+          <h6 className="postJobHeadLine">Consigue empleados r&aacute;pido</h6>
           <h6 className="postJobSubHeadLine">
-            Rated #1 in delivering quality hires
+            N&uacute;mero 1 en empleos de calidad.
           </h6>
 
           <PostJobForm submitForm={this.submitForm} />

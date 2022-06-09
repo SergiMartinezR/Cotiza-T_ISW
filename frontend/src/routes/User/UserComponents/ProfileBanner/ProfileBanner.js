@@ -21,7 +21,7 @@ const userData = {
   profilePic: null,
   // userID : this.props.match.params.id,
   about:
-    "I am an aspiring data scientist who enjoys connecting the dots: be it ideas from different disciplines, people from different teams, or applications from different industries. I have strong technical skills and an academic background in engineering, statistics, and machine learning.",
+    "",
   // about: null,
 };
 
@@ -255,7 +255,7 @@ class ProfileBanner extends Component {
         <div className="userAboutNull">
           {/* <h6 onClick={() => this.displayModal(2)}> */}
           <h6>
-            <i>Nothing to show in about section</i>
+            <i>Nada interesante que mostrar</i>
           </h6>
         </div>
       );
@@ -270,14 +270,14 @@ class ProfileBanner extends Component {
     if (this.state.connectStatus === "notConnected") {
       statusData = (
         <button onClick={this.connectRequest} className="statusButton">
-          Connect
+          Agregar
         </button>
       );
     }
     if (this.state.connectStatus === "pending") {
       statusData = (
         <button onClick={this.removeConnection} className="statusButton">
-          Pending
+          Pendiente
         </button>
       );
     }
@@ -286,7 +286,7 @@ class ProfileBanner extends Component {
         <>
           <button className="statusButton">Message</button>
           <button onClick={this.removeConnection} className="statusButton2">
-            Remove
+            Remover
           </button>
         </>
       );
@@ -330,7 +330,7 @@ class ProfileBanner extends Component {
             <h6 className="userAddr">{this.state.address}</h6>
             <h6 className="userConn">
               {/* <NavLink to="/network"> */}
-              {this.state.connections} connections
+              {this.state.connections} conexiones
               {/* </NavLink> */}
             </h6>
           </div>

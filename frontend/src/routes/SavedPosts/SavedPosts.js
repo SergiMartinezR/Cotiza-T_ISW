@@ -88,9 +88,9 @@ class SavedPosts extends Component {
           <div className="postColumn">
             {/* <CreatePost /> */}
             <div className="savedPostsPrivate">
-              <h6 className="head">Saved Posts</h6>
+              <h6 className="head">Publicaciones guardadas</h6>
               <h6 className="sub">
-                <i>Anything you save is private</i>
+                <i>Todo lo que guardes es privado</i>
               </h6>
             </div>
             <hr style={{ margin: "0px", marginBottom: "12px" }} />

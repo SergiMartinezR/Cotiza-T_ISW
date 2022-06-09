@@ -258,14 +258,14 @@ class Post extends Component {
     let iconData = (
       <div onClick={this.unLike} className="likeIcon">
         <i style={{ color: "#0a66c2" }} class="fas fa-thumbs-up"></i>
-        <h6 style={{ color: "#0a66c2" }}>Like</h6>
+        <h6 style={{ color: "#0a66c2" }}>Me gusta</h6>
       </div>
     );
     if (!this.state.isLiked) {
       iconData = (
         <div onClick={this.like} className="likeIcon">
           <i class="far fa-thumbs-up"></i>
-          <h6>Like</h6>
+          <h6>Me cotiza</h6>
         </div>
       );
     }
@@ -283,7 +283,7 @@ class Post extends Component {
           <input
             value={this.state.newComment}
             type="text"
-            placeholder="Add a comment..."
+            placeholder="Agregar comentario..."
             onChange={(e) => this.setState({ newComment: e.target.value })}
           />
         </form>

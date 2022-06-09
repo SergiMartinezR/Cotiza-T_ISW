@@ -37,7 +37,7 @@ class Applicants extends Component {
           <div className="userDesc">
             <NavLink to={`/user/${this.props.data.applicant_id}`}>
               <h6 className="userName">
-                {this.props.data.applicant_name} has been accepted
+                {this.props.data.applicant_name} ha sido aceptado
               </h6>
             </NavLink>
           </div>
@@ -54,7 +54,7 @@ class Applicants extends Component {
           <div className="userDesc">
             <NavLink to={`/user/${this.props.data.applicant_id}`}>
               <h6 className="userName">
-                {this.props.data.applicant_name} has been rejected
+                {this.props.data.applicant_name} ha sido rechazado
               </h6>
             </NavLink>
           </div>
@@ -75,10 +75,10 @@ class Applicants extends Component {
           </NavLink>
           <div className="buttons">
             <h6 onClick={this.acceptApplicant} className="acceptButton">
-              Accept
+              Aceptar
             </h6>
             <h6 onClick={this.rejectApplicant} className="rejectButton">
-              Reject
+              Rechazar
             </h6>
           </div>
         </div>

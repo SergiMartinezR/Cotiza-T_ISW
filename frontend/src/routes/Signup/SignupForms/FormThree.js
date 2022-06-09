@@ -82,7 +82,7 @@ class FormThree extends Component {
         <h5 className="formOneHead">Verifica tu numero celular</h5>
 
         <div className="form-group">
-          <label>Numero celular:</label>
+          <label>Número celular:</label>
           <input
             style={{ fontSize: "14px" }}
             type="number"

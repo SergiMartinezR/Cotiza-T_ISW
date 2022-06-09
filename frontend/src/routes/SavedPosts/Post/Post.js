@@ -258,14 +258,14 @@ class Post extends Component {
     let iconData = (
       <div onClick={this.unLike} className="likeIcon">
         <i style={{ color: "#0a66c2" }} class="fas fa-thumbs-up"></i>
-        <h6 style={{ color: "#0a66c2" }}>Like</h6>
+        <h6 style={{ color: "#0a66c2" }}>Me cotiza</h6>
       </div>
     );
     if (!this.state.isLiked) {
       iconData = (
         <div onClick={this.like} className="likeIcon">
           <i class="far fa-thumbs-up"></i>
-          <h6>Like</h6>
+          <h6>Me encotiza</h6>
         </div>
       );
     }
@@ -283,7 +283,7 @@ class Post extends Component {
           <input
             value={this.state.newComment}
             type="text"
-            placeholder="Add a comment..."
+            placeholder="Agrega un comentario"
             onChange={(e) => this.setState({ newComment: e.target.value })}
           />
         </form>
@@ -412,7 +412,7 @@ class Post extends Component {
               onClick={this.showFullText}
               className="readmore"
             >
-              ...see more
+              ...ver más
             </h6>
           </div>
         </div>
@@ -440,7 +440,7 @@ class Post extends Component {
               ,
             </span>
             <span onClick={this.displayCommentSection} className="comments">
-              {postData.comment_count} Comments
+              {postData.comment_count} Comentarios
             </span>
           </h6>
         </div>
@@ -452,7 +452,7 @@ class Post extends Component {
 
           <div onClick={this.displayCommentSection} className="commentIcon">
             <i class="far fa-comment-dots"></i>
-            <h6>Comment</h6>
+            <h6>Comentar</h6>
           </div>
         </div>
 

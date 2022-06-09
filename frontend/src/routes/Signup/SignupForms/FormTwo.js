@@ -99,7 +99,7 @@ class FormTwo extends Component {
           (value.length < 3 ? "se requieren al menos 3 caracteres" : "") ||
           (formErrors.lastName = lastnameRegex.test(value)
             ? ""
-            : "only characters allowed!");
+            : "solo se permiten caracteres");
         break;
 
       case "location":
@@ -188,7 +188,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Localizacion:</label>
+              <label>Ubicación:</label>
               <br></br>
               <input
                 type="text"
@@ -199,7 +199,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="location"
-                placeholder="Tu localizacion"
+                placeholder="Tu ubicación"
                 onChange={this.handleChange}
                 required
               />
@@ -233,7 +233,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Instituto/Industria :</label>
+              <label>Empresa:</label>
               <br></br>
               <input
                 type="text"
@@ -244,7 +244,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="industry"
-                placeholder="Ingresa un instituto o industria"
+                placeholder="Ingresa tu empresa"
                 onChange={this.handleChange}
                 required
               />
@@ -308,7 +308,7 @@ class FormTwo extends Component {
               style={{ marginRight: "40px" }}
             >
               <div>
-                <label>Fecha final:</label>
+                <label>Fecha de termino:</label>
                 <br></br>
                 <DatePicker
                   selected={this.state.endDate}
@@ -414,7 +414,7 @@ class FormTwo extends Component {
               <h6
                 style={{ fontSize: "12px", marginTop: "4px", color: "black" }}
               >
-                Ya tienes una cuenta? Inicia sesion!
+                ¿Ya tienes una cuenta? ¡Inicia sesion!
               </h6>
             </Link>
           </div>

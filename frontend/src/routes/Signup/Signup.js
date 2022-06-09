@@ -55,7 +55,7 @@ class Signup extends Component {
         this.setState({
           loading : false,
           showAlert : true, 
-          alertData : 'Algo salio mal!', 
+          alertData : 'Todo lo que ha podido salir mal, lo ha hecho', 
           alertColor : 'danger'
         })
       })
@@ -99,7 +99,7 @@ class Signup extends Component {
         this.setState({loading : false});
         this.setState({
           showAlert : true, 
-          alertData : 'Algo salio mal!', 
+          alertData : 'Todo lo que ha podido salir mal, lo ha hecho', 
           alertColor : 'danger'
         })      
       })
@@ -153,7 +153,7 @@ class Signup extends Component {
         // }
         this.setState({
           showAlert : true, 
-          alertData : 'Este numero celular ya esta relacionado con otra cuenta', 
+          alertData : 'Este número celular ya esta relacionado con otra cuenta', 
           alertColor : 'danger'
         })
         // this.setState({loading : false});
@@ -169,7 +169,7 @@ class Signup extends Component {
     // this.setState({loading : true});
     this.setState({
       showAlert : true, 
-      alertData : 'Por favor espera en lo que verificamos tu numero celular...', 
+      alertData : 'Por favor espera en lo que verificamos tu número celular...', 
       alertColor : 'success'
     })
     axios.post('/user/account/verify/',verifyOtpData)
@@ -179,7 +179,7 @@ class Signup extends Component {
         if(res.status === 200){
           this.setState({
             showAlert : true, 
-            alertData : 'El numero celular ha sido verificado con exito!', 
+            alertData : 'El número celular ha sido verificado con exito', 
             alertColor : 'success'
           })
           this.setState({redirect : '4'});
@@ -191,14 +191,14 @@ class Signup extends Component {
         if(err.response.status === 400){
           this.setState({
             showAlert : true, 
-            alertData : 'OTP expirado!', 
+            alertData : '¡OTP expirado!', 
             alertColor : 'danger'
           })
         }
         if(err.response.status === 403){
           this.setState({
             showAlert : true, 
-            alertData : 'OTP equivocado!', 
+            alertData : '¡OTP incorrecto!', 
             alertColor : 'danger'
           })
         }

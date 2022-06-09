@@ -311,7 +311,7 @@ class Experience extends Component {
       experData = (
         <div style={{ textAlign: "center", transform: "translateY(-10px)" }}>
           <h6 style={{ fontWeight: "350", color: "darkgrey" }}>
-            You have not added any experiences
+            No has añadido ninguna experiencia
           </h6>
         </div>
       );
@@ -356,7 +356,7 @@ class Experience extends Component {
       eduData = (
         <div style={{ textAlign: "center", transform: "translateY(-10px)" }}>
           <h6 style={{ fontWeight: "350", color: "darkgrey" }}>
-            You have not added any education history
+            No has añadido tu historial academico
           </h6>
         </div>
       );
@@ -376,7 +376,7 @@ class Experience extends Component {
             </div>
             <div className="experMid">
               {/* <h6 className="position">{edu.position}</h6> */}
-              <h6 className="position">Student</h6>
+              <h6 className="position">Estudiante</h6>
               <h6 className="industry">{edu.organization_name}</h6>
               <h6>
                 <span className="time">{edu.start_date} - </span>
@@ -402,7 +402,7 @@ class Experience extends Component {
       <>
         {modalData}
         <h5 style={{ color: "red !important" }} className="profStrength">
-          Experiences
+          Experiencias
         </h5>
         <div onClick={() => this.displayModal(1)} className="addExper">
           <i class="fas fa-plus"></i>
@@ -411,7 +411,7 @@ class Experience extends Component {
 
         <div style={{ position: "relative", marginTop: "58px" }}>
           <h5 style={{ color: "red !important" }} className="profStrength">
-            Education
+            Educación
           </h5>
           <div
             onClick={() => this.displayModal(2)}

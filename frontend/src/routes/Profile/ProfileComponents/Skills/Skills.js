@@ -282,14 +282,14 @@ class Skills extends Component {
       if (!this.state.showingAllSkills) {
         conditionalButton = (
           <h6 onClick={this.showMore} className="showMore">
-            Show More
+            Mostrar más
           </h6>
         );
       }
       if (this.state.showingAllSkills) {
         conditionalButton = (
           <h6 onClick={this.showLess} className="showMore">
-            Show Less
+            Mostrar menos
           </h6>
         );
       }
@@ -300,7 +300,7 @@ class Skills extends Component {
       skillsData = (
         <div style={{ textAlign: "center", transform: "translateY(-10px)" }}>
           <h6 style={{ fontWeight: "350", color: "darkgrey" }}>
-            You have not added any skills to showcase
+            Aún no has añadido habilidades
           </h6>
         </div>
       );
@@ -376,7 +376,7 @@ class Skills extends Component {
       <>
         {modalData}
         <h5 style={{ color: "red !important" }} className="profStrength">
-          Skills & Endorsements
+          Habilidades
         </h5>
         <div onClick={() => this.displayModal(1)} className="addExper">
           {/* <i class="fas fa-plus"></i> */}

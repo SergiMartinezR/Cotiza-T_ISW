@@ -69,26 +69,26 @@ class Dashboard extends Component {
 
     return (
       <>
-        <h5 className="profStrength">Your Dashboard</h5>
+        <h5 className="profStrength">Tu Perfil</h5>
         <h6>
-          <i>Private to you</i>
+          <i>Solo t&uacute; lo puedes ver</i>
         </h6>
         <div className="dashboardBox">
           <div style={{ borderRight: "#ccc 1px solid" }}>
             <h5>{this.state.profViews}</h5>
-            <h6>People viewed your profile</h6>
+            <h6>Gente que vi&oacute; tu perfil</h6>
           </div>
           <div style={{ borderRight: "#ccc 1px solid" }}>
             <NavLink to="/MyPosts">
               <h5>{this.state.numPosts}</h5>
             </NavLink>
-            <h6>Posts created</h6>
+            <h6>Empleos publicados</h6>
           </div>
           <div>
             <NavLink to="/savedPosts">
               <h5>{this.state.numBookmark}</h5>
             </NavLink>
-            <h6>Bookmarked Posts</h6>
+            <h6>Publicaciones guardadas</h6>
           </div>
         </div>
       </>

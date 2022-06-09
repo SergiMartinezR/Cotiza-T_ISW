@@ -127,7 +127,7 @@ class Experience extends Component {
       experData = (
         <div style={{ textAlign: "center", transform: "translateY(-10px)" }}>
           <h6 style={{ fontWeight: "350", color: "darkgrey" }}>
-            User has not added any past experinces
+            Este usuario no ha añadido nada a sus experiencias
           </h6>
         </div>
       );
@@ -163,7 +163,7 @@ class Experience extends Component {
       eduData = (
         <div style={{ textAlign: "center", transform: "translateY(-10px)" }}>
           <h6 style={{ fontWeight: "350", color: "darkgrey" }}>
-            User has not added any past education history
+            Este usuario no ha añaido nada a su historial academico
           </h6>
         </div>
       );
@@ -199,14 +199,14 @@ class Experience extends Component {
     return (
       <>
         <h5 style={{ color: "red !important" }} className="profStrength">
-          Experiences
+          Experiencias
         </h5>
 
         {experData}
 
         <div style={{ position: "relative", marginTop: "58px" }}>
           <h5 style={{ color: "red !important" }} className="profStrength">
-            Education
+            Educación
           </h5>
 
           {eduData}

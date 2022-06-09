@@ -189,7 +189,7 @@ class ProfileLevel extends Component {
       <>
         <h5 className="profStrength">
           Profile Strength :
-          <span className="profStrengthString"> {this.state.strengthStr}</span>
+          {/* <span className="profStrengthString"> {this.state.strengthStr}</span> */}
         </h5>
 
         <div className="profileBar">

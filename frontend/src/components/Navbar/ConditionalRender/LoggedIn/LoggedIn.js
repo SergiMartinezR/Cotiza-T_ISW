@@ -132,7 +132,7 @@ class LoggedIn extends Component {
               <h6>CUENTA</h6>
             </div>
             <NavLink disable to="/profile">
-              <h6 className="dropAccountOptions">Ajustes & Privacidad</h6>
+              <h6 className="dropAccountOptions">Ajustes y Privacidad</h6>
             </NavLink>
             <NavLink to="/jobs">
               <h6 className="dropAccountOptions">Mis trabajos</h6>

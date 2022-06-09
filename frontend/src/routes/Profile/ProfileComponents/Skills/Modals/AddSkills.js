@@ -40,7 +40,7 @@ class AddSkills extends Component {
     let skillsData = null;
     if(this.state.list.length === 0){
       skillsData = (
-        <h6 style={{margin:'auto',color:'grey'}} >You've not added any skills.</h6>
+        <h6 style={{margin:'auto',color:'grey'}} >No has añadido ninguna habilidad</h6>
       )
     }
     if (this.state.list.length !== 0) {
@@ -63,7 +63,7 @@ class AddSkills extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userAddAbout">
-            <h5>Add Skills!</h5>
+            <h5>Agrega Habilidades</h5>
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
 
             {/* <form onSubmit={this.skillsSubmit}> */}
@@ -71,7 +71,7 @@ class AddSkills extends Component {
             <form onSubmit={this.addSkill}>
               <div className="form-group">
                 <div>
-                  <label>Enter the skill you want to add :</label>
+                  <label>Ingresa una habilidad que quieras añadir:</label>
                   <br></br>
                   <input
                     type="text"
@@ -83,7 +83,7 @@ class AddSkills extends Component {
                       fontSize: "14px",
                     }}
                     name="lastName"
-                    placeholder="What are you good at?"
+                    placeholder="¿Qué se te da mejor?"
                     onChange={this.handleChange}
                     required
                   />
@@ -95,10 +95,10 @@ class AddSkills extends Component {
 
             <div className="modalBottom">
               <h6 className="userCloseButton" onClick={this.props.hideModal}>
-                Close
+                Cerrar
               </h6>
               <button onClick={this.skillsSubmit} className="userSaveButton">
-                Save
+                Guardar
               </button>
             </div>
             {/* </form> */}

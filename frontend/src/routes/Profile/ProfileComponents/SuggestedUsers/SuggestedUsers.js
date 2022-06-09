@@ -257,7 +257,7 @@ class SuggestedUsers extends Component {
 
     return (
       <>
-        <h6 className="heading">Suggested Profiles</h6>
+        <h6 className="heading">Perfiles Sugeridos</h6>
         {suggestedData}
         {conditionalButton}
       </>

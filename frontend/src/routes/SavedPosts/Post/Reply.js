@@ -68,13 +68,13 @@ class Reply extends Component {
         }}
         className="like"
       >
-        Like
+        Me gusta
       </span>
     );
     if (!this.state.isLiked) {
       likeButton = (
         <span onClick={this.likeReply} className="like">
-          Like
+          Me gusta
         </span>
       );
     }

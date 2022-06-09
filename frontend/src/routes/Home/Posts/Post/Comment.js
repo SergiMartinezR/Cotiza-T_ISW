@@ -117,11 +117,11 @@ class Comment extends Component {
         author_tagline: this.props.tagline,
         text: this.state.newReply,
         is_liked: false,
-        posted_at: 'just now',
+        posted_at: 'ahora',
         id: replyId,
         likes_count: 0,
         liked_by: [],
-        posted_at: "just now",
+        posted_at: "ahora",
       },
     ];
     for (let index in this.state.replies) {
@@ -154,14 +154,14 @@ class Comment extends Component {
         }}
         className="like"
       >
-        Like
+        Me gusta
       </span>
     );
     // if (!this.state.isLiked) {
     if (!this.state.isLiked) {
       likeButton = (
         <span onClick={this.likeComment} className="like">
-          Like
+          Me gusta
         </span>
       );
     }

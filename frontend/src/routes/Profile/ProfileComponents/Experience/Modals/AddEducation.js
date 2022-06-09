@@ -69,7 +69,7 @@ class AddEducation extends Component {
     switch (name) {
       case "institute":
         formErrors.institute =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       // case "location":
@@ -96,7 +96,7 @@ class AddEducation extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userAddAbout">
-            <h5>Add Education!</h5>
+            <h5>Agrega tu educaci&oacute;n</h5>
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
             <form
               encType="multipart/form-data"
@@ -105,7 +105,7 @@ class AddEducation extends Component {
             >
               <div className="form-group">
                 <div>
-                  <label>Institute :</label>
+                  <label>Instituto :</label>
                   <br></br>
                   <input
                     type="text"
@@ -116,7 +116,7 @@ class AddEducation extends Component {
                     }
                     autoComplete="off"
                     name="institute"
-                    placeholder="Your institute"
+                    placeholder="Tu instituto"
                     onChange={this.handleChange}
                     required
                   />
@@ -155,7 +155,7 @@ class AddEducation extends Component {
                   style={{ marginRight: "40px" }}
                 >
                   <div>
-                    <label>Start-Year :</label>
+                    <label>A&ntilde;o de inicio :</label>
                     <br></br>
                     <DatePicker
                       selected={this.state.startDate}
@@ -175,7 +175,7 @@ class AddEducation extends Component {
                   style={{ marginRight: "40px" }}
                 >
                   <div>
-                    <label>End-Year :</label>
+                    <label>A&ntilde;o de termino :</label>
                     <br></br>
                     <DatePicker
                       selected={this.state.endDate}
@@ -220,16 +220,16 @@ class AddEducation extends Component {
                   defaultChecked={this.state.headline}
                 />
                 <label style={{ fontSize: "13px" }}>
-                  Make this my headline
+                  Incluye esto a mi perfil principal
                 </label>
               </div>
 
               <div className="modalBottom">
                 <h6 className="userCloseButton" onClick={this.props.hideModal}>
-                  Close
+                  Cerrar
                 </h6>
                 <button type="submit" className="userSaveButton">
-                  Add
+                  Agregar
                 </button>
                 {/* <h6 type='submit' className="userSaveButton">Save</h6> */}
               </div>

@@ -22,21 +22,21 @@ class ProfileLevel extends Component {
     };
 
     let profID = localStorage.getItem('profileID');
-    axios.get(`/user/profile/strength/`,config)
-      .then((res)=>{
+    axios.get(`/user/profile/strength/`, config)
+      .then((res) => {
         console.log(res);
-        this.setState({strengthInt : res.data.profile_strength,isLoading : false});
-        if(res.data.profile_strength < 4){
-          this.setState({strengthStr : 'Begginer'});
+        this.setState({ strengthInt: res.data.profile_strength, isLoading: false });
+        if (res.data.profile_strength < 4) {
+          this.setState({ strengthStr: 'Begginer' });
         }
-        else if(res.data.profile_strength >= 4 && res.data.profile_strength <= 5){
-          this.setState({strengthStr : 'Intermediate'});
+        else if (res.data.profile_strength >= 4 && res.data.profile_strength <= 5) {
+          this.setState({ strengthStr: 'Intermediate' });
         }
-        else if(res.data.profile_strength >= 6 ){
-          this.setState({strengthStr : 'Expert'});
+        else if (res.data.profile_strength >= 6) {
+          this.setState({ strengthStr: 'Expert' });
         }
       })
-      .catch((err)=>{
+      .catch((err) => {
         console.log(err);
       })
   }
@@ -188,8 +188,8 @@ class ProfileLevel extends Component {
     return (
       <>
         <h5 className="profStrength">
-          Profile Strength :
-          <span className="profStrengthString"> {this.state.strengthStr}</span>
+          Nivel del Perfil:
+          {/* <span className="profStrengthString"> {this.state.strengthStr}</span> */}
         </h5>
 
         <div className="profileBar">

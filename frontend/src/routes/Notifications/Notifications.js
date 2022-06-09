@@ -108,7 +108,7 @@ class Notifications extends Component {
       notificationsDisplay = (
         <div className="emptyNotifications">
           <h6>
-            <i>Nothing to show here!</i>
+            <i>NADA POR AQUÍ</i>
           </h6>
         </div>
       );
@@ -200,7 +200,7 @@ class Notifications extends Component {
           </div>
 
           <div className="notificationColumn postColumn">
-            <h6 className="heading">Notifications</h6>
+            <h6 className="heading">Notificaciones</h6>
             {notificationsDisplay}
           </div>
 

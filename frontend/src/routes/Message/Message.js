@@ -143,7 +143,7 @@ class Message extends Component {
             </div>
 
             <div className="box2">
-              <h6 className="adHead">Message, Connect & Increase your reach</h6>
+              <h6 className="adHead">Mensajea, Conectate y aumenta tu coso</h6>
               <img src={msgImg} />
               <h6 className="adBot adBot1">Connect to opportunity</h6>
               <h6 className="adBot">

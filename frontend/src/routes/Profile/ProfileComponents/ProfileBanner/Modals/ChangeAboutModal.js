@@ -25,7 +25,7 @@ class ChangeAbout extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userAddAbout">
-            <h5>Let people know about you!</h5>
+            <h5>Haz que la gente sepa de ti</h5>
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
             <form onSubmit={this.formSubmit}>
               <div class="form-group">
@@ -39,15 +39,15 @@ class ChangeAbout extends Component {
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Add about yourself!"
+                  placeholder="Agrega acerca de ti"
                 />
               </div>
               <div className="modalBottom">
                 <h6 className="userCloseButton" onClick={this.props.hideModal}>
-                  Close
+                  Cerrar
                 </h6>
                 <button type="submit" className="userSaveButton">
-                  Save
+                  Guardar
                 </button>
                 {/* <h6 type='submit' className="userSaveButton">Save</h6> */}
               </div>

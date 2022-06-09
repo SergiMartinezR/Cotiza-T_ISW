@@ -264,7 +264,7 @@ class ProfileBanner extends Component {
       aboutUserData = (
         <div className="userAboutNull">
           <h6 onClick={() => this.displayModal(2)}>
-            Add about yourself, so people get to know you better.
+             Agrega tu información, para que la gente pueda saber sobre ti.
           </h6>
         </div>
       );
@@ -350,7 +350,7 @@ class ProfileBanner extends Component {
             <h6 className="userConn">
               <NavLink to="/network">
                 {/* {this.state.connections} connections */}
-                {this.props.data.connections} connections
+                {this.props.data.connections} conexiones
               </NavLink>
             </h6>
           </div>

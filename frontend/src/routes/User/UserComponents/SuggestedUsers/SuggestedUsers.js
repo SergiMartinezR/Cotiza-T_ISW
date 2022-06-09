@@ -235,14 +235,14 @@ class SuggestedUsers extends Component {
       if (!this.state.showingAllUsers) {
         conditionalButton = (
           <h6 onClick={this.showMore} className="showMore">
-            Show More
+            Mostrar más
           </h6>
         );
       }
       if (this.state.showingAllUsers) {
         conditionalButton = (
           <h6 onClick={this.showLess} className="showMore">
-            Show Less
+            SMostrar menos
           </h6>
         );
       }
@@ -257,7 +257,7 @@ class SuggestedUsers extends Component {
 
     return (
       <>
-        <h6 className="heading">Suggested Profiles</h6>
+        <h6 className="heading">Perfiles sugeridos</h6>
         {suggestedData}
         {conditionalButton}
       </>

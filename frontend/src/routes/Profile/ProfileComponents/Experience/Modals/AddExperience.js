@@ -70,12 +70,12 @@ class AddExperience extends Component {
     switch (name) {
       case "position":
         formErrors.position =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "industry":
         formErrors.industry =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       default:
@@ -97,7 +97,7 @@ class AddExperience extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userAddAbout">
-            <h5>Add Experience!</h5>
+            <h5>Arega tu experiencia</h5>
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
             <form
               encType="multipart/form-data"
@@ -106,7 +106,7 @@ class AddExperience extends Component {
             >
               <div className="form-group">
                 <div>
-                  <label>Position :</label>
+                  <label>Puesto:</label>
                   <br></br>
                   <input
                     type="text"
@@ -117,7 +117,7 @@ class AddExperience extends Component {
                     }
                     autoComplete="off"
                     name="position"
-                    placeholder="Your position"
+                    placeholder="Tu último puesto"
                     onChange={this.handleChange}
                     required
                   />
@@ -129,7 +129,7 @@ class AddExperience extends Component {
 
               <div className="form-group">
                 <div>
-                  <label>Institute/Industry :</label>
+                  <label>Empresa:</label>
                   <br></br>
                   <input
                     type="text"
@@ -140,7 +140,7 @@ class AddExperience extends Component {
                         : "form-control"
                     }
                     name="industry"
-                    placeholder="Enter Institute or Industry"
+                    placeholder="Empresa"
                     onChange={this.handleChange}
                     required
                   />
@@ -156,7 +156,7 @@ class AddExperience extends Component {
                   style={{ marginRight: "40px" }}
                 >
                   <div>
-                    <label>Start-Year :</label>
+                    <label>Año de inicio :</label>
                     <br></br>
                     <DatePicker
                       selected={this.state.startDate}
@@ -176,7 +176,7 @@ class AddExperience extends Component {
                   style={{ marginRight: "40px" }}
                 >
                   <div>
-                    <label>End-Year :</label>
+                    <label>Año de termino :</label>
                     <br></br>
                     <DatePicker
                       selected={this.state.endDate}
@@ -216,15 +216,15 @@ class AddExperience extends Component {
                   }}
                   defaultChecked={this.state.headline}
                 />
-                <label style={{fontSize:'13px'}}>Make this my headline</label>
+                <label style={{fontSize:'13px'}}>Añade esto a mi perfil principal</label>
               </div>
 
               <div className="modalBottom">
                 <h6 className="userCloseButton" onClick={this.props.hideModal}>
-                  Close
+                  Cerrar
                 </h6>
                 <button type="submit" className="userSaveButton">
-                  Add
+                  Añadir
                 </button>
                 {/* <h6 type='submit' className="userSaveButton">Save</h6> */}
               </div>

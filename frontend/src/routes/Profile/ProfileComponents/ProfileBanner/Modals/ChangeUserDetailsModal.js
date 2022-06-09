@@ -71,11 +71,11 @@ class ChangeUserDetailsModal extends Component {
       case "firstName":
         formErrors.firstName =
           (value.length < 3 && value.length > 0
-            ? "minimum 3 characaters required"
+            ? "Se requieren al menos 3 caracteres"
             : "") ||
           (formErrors.firstName = nameRegex.test(value)
             ? ""
-            : "only characters allowed!");
+            : "solo se aceptan caracteres");
         break;
 
       case "lastName":
@@ -86,21 +86,21 @@ class ChangeUserDetailsModal extends Component {
           }
         }
         formErrors.lastName =
-          (spaceNum > 1 ? "more than one space prohibited" : "") ||
-          (value.length < 3 ? "minimum 3 characaters required" : "") ||
+          (spaceNum > 1 ? "Está prohibido poner más de un espacio" : "") ||
+          (value.length < 3 ? "Se requieren al menos 3 caracteres" : "") ||
           (formErrors.lastName = lastnameRegex.test(value)
             ? ""
-            : "only characters allowed!");
+            : "solo se aceptan caracteres");
         break;
 
       case "location":
         formErrors.location =
-          value.length < 3 ? "minimum 3 characters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "tagline":
         formErrors.tagline =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
 
@@ -123,7 +123,7 @@ class ChangeUserDetailsModal extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userEditDetails">
-            <h5>Edit personal details!</h5>
+            <h5>Edita tu información persoanl</h5>
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
             <form
               encType="multipart/form-data"
@@ -132,7 +132,7 @@ class ChangeUserDetailsModal extends Component {
             >
               <div className="form-group">
                 <div>
-                  <label>Firstname : </label>
+                  <label>Nombre(s): </label>
                   <input
                     type="text"
                     autoComplete="off"
@@ -142,7 +142,7 @@ class ChangeUserDetailsModal extends Component {
                         : "form-control"
                     }
                     name="firstName"
-                    placeholder="First Name"
+                    placeholder="Nombre(s)"
                     onChange={this.handleChange}
                     required
                   />
@@ -154,7 +154,7 @@ class ChangeUserDetailsModal extends Component {
 
               <div className="form-group">
                 <div>
-                  <label>Lastname :</label>
+                  <label>Apellido:</label>
                   <br></br>
                   <input
                     type="text"
@@ -165,7 +165,7 @@ class ChangeUserDetailsModal extends Component {
                         : "form-control"
                     }
                     name="lastName"
-                    placeholder="Last Name"
+                    placeholder="Apellido"
                     onChange={this.handleChange}
                     required
                   />
@@ -177,7 +177,7 @@ class ChangeUserDetailsModal extends Component {
 
               <div className="form-group">
                 <div>
-                  <label>Location :</label>
+                  <label>Ubicación:</label>
                   <br></br>
                   <input
                     type="text"
@@ -188,7 +188,7 @@ class ChangeUserDetailsModal extends Component {
                         : "form-control"
                     }
                     name="location"
-                    placeholder="Your location"
+                    placeholder="Tu ubicación"
                     onChange={this.handleChange}
                     required
                   />
@@ -200,7 +200,7 @@ class ChangeUserDetailsModal extends Component {
 
               <div className="form-group">
                 <div>
-                  <label>Headline :</label>
+                  <label>Tu puesto:</label>
                   <br></br>
                   <input
                     type="text"
@@ -210,7 +210,7 @@ class ChangeUserDetailsModal extends Component {
                         : "form-control"
                     }
                     name="tagline"
-                    placeholder="Your position"
+                    placeholder="Tu puesto"
                     onChange={this.handleChange}
                     required
                   />
@@ -221,7 +221,7 @@ class ChangeUserDetailsModal extends Component {
               </div>
 
               <div className="form-group">
-                <label>Profile Img : </label>
+                <label>Imagen de perfil: </label>
                 <br></br>
                 <div>
                   <input
@@ -235,10 +235,10 @@ class ChangeUserDetailsModal extends Component {
               
               <div className="modalBottom">
                 <h6 className="userCloseButton" onClick={this.props.hideModal}>
-                  Close
+                  Cerrar
                 </h6>
                 <button type="submit" className="userSaveButton">
-                  Save
+                  Guardar
                 </button>
                 {/* <h6 type='submit' className="userSaveButton">Save</h6> */}
               </div>

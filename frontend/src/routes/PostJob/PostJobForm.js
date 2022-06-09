@@ -28,7 +28,7 @@ class FormTwo extends Component {
     jobTitle: null,
     company: null,
     location: null,
-    employmentType: "Fulltime",
+    employmentType: "Tiempo completo",
     description: null,
     skillsRequired: null,
     industry: null,
@@ -62,7 +62,7 @@ class FormTwo extends Component {
         jobTitle: null,
         company: null,
         location: null,
-        employmentType: "Fulltime",
+        employmentType: "Tiempo completo",
         description: null,
         skillsRequired: null,
         industry: null,
@@ -125,37 +125,37 @@ class FormTwo extends Component {
 
       case "jobTitle":
         formErrors.jobTitle =
-          value.length < 3 ? "minimum 3 characters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "company":
         formErrors.company =
-          value.length < 3 ? "minimum 3 characters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "location":
         formErrors.location =
-          value.length < 3 ? "minimum 3 characters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "employmentType":
         formErrors.employmentType =
-          value.length < 3 ? "minimum 3 characters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "description":
         formErrors.description =
-          value.length < 3 ? "minimum 3 characters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "skillsRequired":
         formErrors.skillsRequired =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       case "industry":
         formErrors.industry =
-          value.length < 3 ? "minimum 3 characaters required" : "";
+          value.length < 3 ? "Se requieren al menos 3 caracteres" : "";
         break;
 
       // case "payRange":
@@ -189,7 +189,7 @@ class FormTwo extends Component {
         >
           <div className="form-group">
             <div>
-              <label>Job title *</label>
+              <label>Titulo *</label>
               <input
                 type="text"
                 autoComplete="off"
@@ -200,7 +200,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="jobTitle"
-                placeholder="What domain are you looking for?"
+                placeholder="¿Qué tipo de empleo ofreces?"
                 onChange={this.handleChange}
                 required
               />
@@ -212,7 +212,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Company *</label>
+              <label>Compa&ntilde;&iacute;a *</label>
               {/* <br></br> */}
               <input
                 type="text"
@@ -224,7 +224,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="company"
-                placeholder="Last Name"
+                placeholder="Nombre de la compañía"
                 onChange={this.handleChange}
                 required
               />
@@ -236,7 +236,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Location *</label>
+              <label>Ubicación *</label>
               <br></br>
               <input
                 type="text"
@@ -248,7 +248,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="location"
-                placeholder="Your location"
+                placeholder="Ubicación del empleo"
                 onChange={this.handleChange}
                 required
               />
@@ -260,7 +260,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Employment Type *</label>
+              <label>Tipo de empleo *</label>
               {/* <input
                 type="text"
                 className={
@@ -283,12 +283,12 @@ class FormTwo extends Component {
                 }
                 required
               >
-                <option value="Fulltime">Full-Time</option>
-                <option value="Parttime">Part-Time</option>
-                <option value="Contract">Contract</option>
-                <option value="Temporary">Temporary</option>
-                <option value="Volunteer">Volunteer</option>
-                <option value="Internship">Internship</option>
+                <option value="Fulltime">Tiempo completo</option>
+                <option value="Parttime">Medio tiempo</option>
+                <option value="Contract">Contrataci&oacute;n directa</option>
+                <option value="Temporary">Temporal</option>
+                <option value="Volunteer">Voluntario</option>
+                <option value="Internship">Pasant&iacute;a</option>
               </select>
             </div>
             {formErrors.employmentType.length > 0 && (
@@ -298,7 +298,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Job Description *</label>
+              <label>Descripción *</label>
               <br></br>
               <textarea
                 type="text"
@@ -310,7 +310,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="description"
-                placeholder="Enter Institute or Industry"
+                placeholder="Ingresa una breve descripción"
                 onChange={this.handleChange}
                 required
               />
@@ -322,7 +322,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Skills Required *</label>
+              <label>Habilidades Requeridas *</label>
               <br></br>
               <input
                 type="text"
@@ -334,7 +334,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="skillsRequired"
-                placeholder="Enter Institute or Industry"
+                placeholder="¿Qué necesitas?"
                 onChange={this.handleChange}
                 required
               />
@@ -346,7 +346,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Related Industry *</label>
+              <label>&Aacute;rea Relacionada *</label>
               <br></br>
               <input
                 type="text"
@@ -358,7 +358,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="industry"
-                placeholder="Enter Institute or Industry"
+                placeholder="¿A qué te dedicas?"
                 onChange={this.handleChange}
                 required
               />
@@ -370,7 +370,7 @@ class FormTwo extends Component {
 
           <div className="form-group">
             <div>
-              <label>Pay Scale :</label>
+              <label>Salario :</label>
               <br></br>
               <input
                 type="text"
@@ -382,7 +382,7 @@ class FormTwo extends Component {
                     : "form-control"
                 }
                 name="payRange"
-                placeholder="Enter Institute or Industry"
+                placeholder="¿Cuanto ofreces?"
                 onChange={this.handleChange}
               />
             </div>
@@ -392,7 +392,7 @@ class FormTwo extends Component {
           </div>
 
           <div className="form-group">
-            <label>Comapny logo : </label>
+            <label>Logo de la compa&ntilde;&iacute;a : </label>
             <br></br>
             <div>
               <input
@@ -425,7 +425,7 @@ class FormTwo extends Component {
               className="btn btn-dark"
               style={{ width: "50%" }}
             >
-              Post Job
+              Publicar Empleo
             </button>
           </div>
         </form>
