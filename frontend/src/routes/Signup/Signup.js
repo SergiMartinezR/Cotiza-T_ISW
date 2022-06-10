@@ -81,6 +81,7 @@ class Signup extends Component {
     userDetails.append('position',details.position);
     userDetails.append('start_date',moment(details.startDate).format('YYYY-MM-DD'));
     userDetails.append('end_date',moment(details.endDate).format('YYYY-MM-DD'));
+    userDetails.append('anios_cotizados',details.semanasCotizadas);
 
     console.log(userDetails);
     this.setState({loading : true});

@@ -4,6 +4,7 @@ import Posts from "../Posts/Posts";
 import PopularDomains from "../../../components/PopularDomains/PopularDomains";
 import CreatePost from "../../../components/CreatePost/CreatePost";
 import "../Home.css";
+import JobsPosted from "../../HomeJobsPosted/JobsPosted";
 
 class LoggedIn extends Component {
   render() {
@@ -14,9 +15,7 @@ class LoggedIn extends Component {
         </div>
 
         <div className="postColumn">
-          <CreatePost />
-          <hr style={{ margin: "0px", marginBottom: "12px" }} />
-          <Posts />
+          <JobsPosted/>
         </div>
 
         <div className='popDomains'>
