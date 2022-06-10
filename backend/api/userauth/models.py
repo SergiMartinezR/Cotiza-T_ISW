@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser
@@ -92,9 +93,11 @@ class UserProfile(models.Model):
     last_name = models.CharField(max_length=30)
     avatar = models.ImageField(upload_to='avatar/', blank=True, null=True, max_length=1048576)  # 1MB
     location = models.CharField(max_length=50)
+    anios_cotizados = models.PositiveIntegerField('Años cotizados', null=True)
     phone_number = models.CharField(max_length=10, blank=True, unique = True,
                                     validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),])
 
+    pageadmin = models.BooleanField(default=False)
     is_online = models.BooleanField(default=False)
 
     def __str__(self):
