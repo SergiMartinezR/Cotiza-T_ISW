@@ -38,6 +38,7 @@ class FormTwo extends Component {
     endDate: new Date(),
     selectedFile: null,
     isStudent: false,
+    semanasCotizadas: "",
     formErrors: {
       firstName: "",
       lastName: "",
@@ -46,6 +47,7 @@ class FormTwo extends Component {
       industry: "",
       startDate: "",
       endDate: "",
+      semanasCotizadas: "",
       // selectedFile: ""
     },
   };
@@ -65,11 +67,6 @@ class FormTwo extends Component {
     }
   };
 
-  // handleStudentChange = () => {
-  //   let isUserStudent = this.state.isStudent;
-  //   this.setState({isStudent : !isUserStudent});
-  //   console.log(this.state);
-  // }
 
   handleChange = (e) => {
     e.preventDefault();
@@ -100,6 +97,10 @@ class FormTwo extends Component {
           (formErrors.lastName = lastnameRegex.test(value)
             ? ""
             : "solo se permiten caracteres");
+        break;
+      case "semanasCotizadas":
+        formErrors.semanasCotizadas = 
+          (value<15 ? "Necesitas al menos 15 años cotizados" : "")
         break;
 
       case "location":
@@ -254,6 +255,33 @@ class FormTwo extends Component {
             )}
           </div>
 
+          <div className="form-group">
+            <div>
+
+            <label>Años Cotizadas:</label>
+            <input
+              style={{ fontSize: "14px" }}
+              type="number"
+              name="semanasCotizadas"
+              className={
+                formErrors.semanasCotizadas>0
+                  ? "error form-control"
+                  : "form-control"
+              }
+              value={this.state.semanasCotizadas}
+              onChange={this.handleChange}
+              placeholder="Ingresa tus Años cotizadas"
+              id="semanasCotizadas"
+              required
+            />
+
+            </div>
+            {formErrors.semanasCotizadas.length > 0 && (
+              <span className="errorMessage">{formErrors.semanasCotizadas}</span>
+            )}
+            {/* <div className="text-danger">{this.state.errors.name}</div> */}
+          </div>
+
           {/* <div className="form-group formTwoDateSection">
             <div
               className="formTwoDates formTwoDateOne"
@@ -397,7 +425,7 @@ class FormTwo extends Component {
                 this.setState({ isStudent: !this.state.isStudent });
                 console.log(this.state);
               }}
-              // defaultChecked={!this.state.isStudent}
+            // defaultChecked={!this.state.isStudent}
             />
             <label>Soy un estudiante</label>
           </div>
