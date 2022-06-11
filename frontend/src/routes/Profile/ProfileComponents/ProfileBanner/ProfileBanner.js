@@ -287,7 +287,7 @@ class ProfileBanner extends Component {
         />
       );
     }
-
+    console.log("HOLA", this.props.data);
     // let profilePic = this.state.profilePic;\
     let profilePic = this.props.data.img;
     if (profilePic === null) {
@@ -350,7 +350,7 @@ class ProfileBanner extends Component {
             <h6 className="userConn">
               <NavLink to="/network">
                 {/* {this.state.connections} connections */}
-                {this.props.data.connections} conexiones
+                {this.props.data.anios} a&ntilde;os cotizados
               </NavLink>
             </h6>
           </div>

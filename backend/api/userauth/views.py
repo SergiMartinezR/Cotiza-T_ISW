@@ -257,6 +257,7 @@ class UserInfo(views.APIView):
         except:
             user_avatar = None
         user_tagline = user.social_profile.tagline
+        anios = user.anios_cotizados
         connection   = Connection.objects.filter(sender = user, has_been_accepted = True).count() + \
                        Connection.objects.filter(receiver = user, has_been_accepted = True).count()
         bookmarks    = user.bookmarked_posts.count()
@@ -264,6 +265,7 @@ class UserInfo(views.APIView):
         return Response({'user_name': user_name,
                         'user_avatar': user_avatar,
                         'user_tagline': user_tagline,
+                        'anios_cotizados': anios,
                         'connection': connection,
                         'bookmarks': bookmarks}, status = status.HTTP_200_OK)
                                

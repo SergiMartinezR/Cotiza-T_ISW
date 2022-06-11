@@ -107,20 +107,20 @@ class ProfileSidebox extends Component {
 
           <div style={{ width: "100%", margin: "16px 0px" }}>
             <div className="profileVisits">
-              <div>Conexiones : </div>
+              <div>A&ntilde;os cotizados: </div>
               <div style={{ color: "blue", fontSize: "13.3px" }}>
                 {/* {this.state.details.connection} */}
-                {this.props.data.connections}
+                {this.props.data.anios}
               </div>
             </div>
 
-            <div className="profileVisits">
+            {/* <div className="profileVisits">
               <div>Elementos : </div>
               <div style={{ color: "blue", fontSize: "13.3px" }}>
-                {/* {this.state.details.bookmarks} */}
+                {/* {this.state.details.bookmarks} }
                 {this.props.data.saved}
               </div>
-            </div>
+            </div> */}
           </div>
 
           <NavLink
@@ -140,6 +140,8 @@ class ProfileSidebox extends Component {
           </NavLink>
         </>
       );
+      console.log("HOLAsaramambiche", this.props.data);
+      console.log(this.props.data.anios);
     }
 
     return (

@@ -45,7 +45,7 @@ export const fetchBannerData = () => {
     axios
       .get(`/user/profile/banner/${profID}/`, config)
       .then((res) => {
-        console.log(res);
+        console.log("HOLAHOLAHOLA", res);
         dispatch(fetchBannerDispatch(res.data));
       })
       .catch((err) => {

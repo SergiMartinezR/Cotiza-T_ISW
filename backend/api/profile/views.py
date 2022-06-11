@@ -480,6 +480,7 @@ class BannerView(views.APIView):
         first_name          = user.first_name
         last_name           = user.last_name 
         location            = user.location
+        anios               = user.anios_cotizados
         tagline             = user.social_profile.tagline
         connection          = Connection.objects.filter(sender = user, has_been_accepted = True).count() + \
                               Connection.objects.filter(receiver = user, has_been_accepted = True).count()
@@ -509,7 +510,7 @@ class BannerView(views.APIView):
         about               = user.social_profile.bio
         
         return Response({'avatar':avatar,'first_name':first_name, 'last_name':last_name, 
-                         'location':location,'tagline':tagline,'experience':experience, 
+                         'location':location, 'anios_cotizados': anios, 'tagline':tagline,'experience':experience, 
                          'connection':connection, 'profile_views':profile_views, 'bookmarked_posts':bookmarked_posts, 
                          'about':about,'is_connected':is_connected,'is_pending':is_pending,'connection_id':connection_id}, 
                           status = status.HTTP_200_OK)

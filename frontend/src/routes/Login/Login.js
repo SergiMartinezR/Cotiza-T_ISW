@@ -40,7 +40,7 @@ class Login extends Component {
             loading : false,
             showAlert : true,
             alertColor : 'success',
-            alertData : 'LoggedIn successsfully!...Redirecting!'
+            alertData : 'Inicio de sesión correcto. Redireccionando'
           });
           setTimeout(()=>{
             this.setState({redirect : 'home'})
@@ -56,14 +56,14 @@ class Login extends Component {
           this.setState({
             showAlert : true,
             alertColor : 'danger',
-            alertData : 'No account found, linked to this EMail!'
+            alertData : 'NO se encontró ninguna cuenta con este perfil'
           })
         }
         if(errorStatus === 401){
           this.setState({
             showAlert : true,
             alertColor : 'danger',
-            alertData : 'Password entered is incorrect!'
+            alertData : 'La constraseña es incorecta'
           })
         }
         if(errorStatus === 404){
@@ -71,7 +71,7 @@ class Login extends Component {
           this.setState({
             showAlert : true,
             alertColor : 'danger',
-            alertData : 'Complete your verification!',
+            alertData : 'Completa tu verificación',
           })
           setTimeout(()=>{
             this.setState({redirect : 'secondForm'});
@@ -83,7 +83,7 @@ class Login extends Component {
           this.setState({
             showAlert : true,
             alertColor : 'danger',
-            alertData : 'Complete your otp verification!',
+            alertData : 'Completa tu verificación',
           })
           setTimeout(()=>{
             this.setState({redirect : 'thirdForm'});

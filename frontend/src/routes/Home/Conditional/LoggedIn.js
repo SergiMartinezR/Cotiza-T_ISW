@@ -9,16 +9,16 @@ import JobsPosted from "../../HomeJobsPosted/JobsPosted";
 class LoggedIn extends Component {
   render() {
     return (
-      <div className="body feedBody">
-        <div className="sideBox2">
+      <div className="body feedBody row">
+        <div className="col left">
           <ProfileSidebox />
         </div>
 
-        <div className="postColumn">
+        <div className="col middle">
           <JobsPosted/>
         </div>
 
-        <div className='popDomains'>
+        <div className="col right">
           <PopularDomains />
         </div>
       </div>

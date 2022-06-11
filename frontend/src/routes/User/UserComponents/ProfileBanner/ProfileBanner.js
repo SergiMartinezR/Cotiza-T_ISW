@@ -37,6 +37,7 @@ class ProfileBanner extends Component {
     industry: null,
     address: null,
     connections: null,
+    anios: null,
     about: null,
     bannerSrc: bannerSrc,
     profilePic: null,
@@ -67,6 +68,7 @@ class ProfileBanner extends Component {
           profilePic: res.data.avatar,
           tagline: res.data.tagline,
           connections: res.data.connection,
+          anios: res.data.anios_cotizados,
           address: res.data.location,
           about: res.data.about,
           experience: res.data.experience,
@@ -330,7 +332,7 @@ class ProfileBanner extends Component {
             <h6 className="userAddr">{this.state.address}</h6>
             <h6 className="userConn">
               {/* <NavLink to="/network"> */}
-              {this.state.connections} conexiones
+              {this.state.anios} a&ntilde;os cotizados
               {/* </NavLink> */}
             </h6>
           </div>

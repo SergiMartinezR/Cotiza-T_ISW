@@ -9,6 +9,7 @@ const initialState = {
     saved: null,
     address: null,
     connection: null,
+    anios: null,
     about: null,
     experience: null,
   },
@@ -24,6 +25,7 @@ const profileReducer = (state = initialState, action) => {
           tagline: action.userData.user_tagline,
           img: action.userData.user_avatar,
           connections: action.userData.connection,
+          anios: action.userData.anios_cotizados,
           saved: action.userData.bookmarks,
         },
       };
@@ -39,6 +41,7 @@ const profileReducer = (state = initialState, action) => {
           address: action.user.location,
           name: `${action.user.first_name} ${action.user.last_name}`,
           tagline: action.user.tagline,
+          anios: action.user.anios_cotizados,
           img: action.user.avatar,
           connections: action.user.connection,
           // saved: action.userData.bookmarks,
