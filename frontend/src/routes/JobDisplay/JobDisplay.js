@@ -67,7 +67,7 @@ class JobDisplay extends Component {
       headers: { Authorization: `Bearer ${token}` },
     };
     axios
-      .post(`/user/profile/vacancy/bookmark/${this.state.jobId}/`,config)
+      .post(`/user/profile/vacancy/bookmark/${this.state.jobId}/`,null,config)
       .then((res) => {
         console.log(res);
         this.setState({ isSaved: true });
@@ -101,8 +101,9 @@ class JobDisplay extends Component {
     const config = {
       headers: { Authorization: `Bearer ${token}` },
     };
+    console.log(config);
     axios
-      .post(`/user/profile/vacancy/apply/${this.state.jobId}/`,config)
+      .post(`/user/profile/vacancy/apply/${this.state.jobId}/`,null,config)
       .then((res) => {
         console.log(res);
         this.setState({ isApplied: true });
