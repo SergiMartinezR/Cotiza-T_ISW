@@ -17,6 +17,7 @@ import SearchDisplay from "./routes/SearchDisplay/SearchDisplay";
 import Notifications from "./routes/Notifications/Notifications";
 import MyPosts from "./routes/MyPosts/MyPosts";
 import Message from "./routes/Message/Message";
+import SignupEmpresa from "./SingUpEmpresas/SignupEmpresa";
 
 function App() {
   return (
@@ -28,6 +29,12 @@ function App() {
             path="/userSignup/:id"
             render={(props) => (
               <Signup key={props.location.pathname} {...props} />
+            )}
+          />
+          <Route
+            path="/SignupEnterprise/:id"
+            render={(props) => (
+              <SignupEmpresa key={props.location.pathname} {...props} />
             )}
           />
           <Route path="/userLogin" exact component={Login} />

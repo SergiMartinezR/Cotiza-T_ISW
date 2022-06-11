@@ -5,6 +5,9 @@ import '../../Navbar.css'
 const Logout = (props) => {
   return (
     <div className='conditional_render centerDiv'>
+      <Link to='/SignupEnterprise/register'>
+        <button className='signbutton' type="button">Registrar Empresa</button>
+      </Link>
       <Link to='/userSignup/register'>
         <button className='signbutton' type="button">Registrarse</button>
       </Link>
