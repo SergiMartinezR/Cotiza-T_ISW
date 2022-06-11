@@ -78,7 +78,7 @@ class JobDisplay extends Component {
   };
 
   unSave = () => {
-    alert("Unsave Job");
+    // alert("Unsave Job");
     // this.setState({ isSaved: false });
     let token = localStorage.getItem("accessToken");
     const config = {
@@ -124,7 +124,7 @@ class JobDisplay extends Component {
     axios
       .delete(`/user/profile/vacancy/apply/${this.state.jobId}/`,config)
       .then((res) => {
-        console.log(res);
+        console.log("holauwu",res);
         this.setState({ isApplied: false });
       })
       .catch((err) => {

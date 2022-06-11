@@ -1,10 +1,10 @@
 .postColumn{
   margin-left: 0px;
-  width: 1110px;
+  width: 600px;
   /* min-height: 1200px; */
   /* position: absolute; */
 }
-/* @media (max-width:1276px){
+@media (max-width:1276px){
   .postColumn{
     margin-left: 1.3vw;
     margin: auto;
@@ -26,16 +26,4 @@
   .postColumn{
     width: 92vw;
   }
-} */
-
-.col {
-  float: left;
 }
-
-.left, .right {
-  width: 25%;
-}
-
-.middle {
-  width: 50%;
-} 

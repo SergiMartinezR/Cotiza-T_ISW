@@ -10,15 +10,15 @@ class LoggedIn extends Component {
   render() {
     return (
       <div className="body feedBody row">
-        <div className="col left">
+        <div className="left col">
           <ProfileSidebox />
         </div>
 
-        <div className="col middle">
+        <div className="middle col">
           <JobsPosted/>
         </div>
 
-        <div className="col right">
+        <div className="right col">
           <PopularDomains />
         </div>
       </div>

@@ -620,7 +620,6 @@ class JobVacancyView(viewsets.ViewSet):
         return Response({'detail': 'Job vacancy removed successfully.'}, status = status.HTTP_204_NO_CONTENT)
     
 class VacancyApplyView(views.APIView):
-    print("nada")
     def post(self, request, vacancy_id):
         vacancy = get_object_or_404(JobVacancy, id = vacancy_id)
         applicant = request.user.profile
@@ -674,7 +673,7 @@ class VacancyReviewView(views.APIView):
                                                  action = 'application_accepted', action_id = vacancy_id).delete()
                         except:
                             pass
-                    application.has_been_accepted = False
+                    application.has_been_accepted = True
                     application.save()
                     return Response({'detail':'Application rejected.'}, status = status.HTTP_204_NO_CONTENT)
                 return Response({'detail':'Choice to accept/reject apllication not provided.'}, status = status.HTTP_400_BAD_REQUEST)
