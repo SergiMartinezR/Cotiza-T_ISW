@@ -44,6 +44,7 @@ class Applicants extends Component {
         </div>
       );
     }
+    console.log(this.state.status)
     if (this.state.status === false) {
       return (
         <div className="user">

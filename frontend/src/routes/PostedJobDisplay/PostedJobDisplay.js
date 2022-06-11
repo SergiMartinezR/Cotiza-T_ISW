@@ -210,7 +210,7 @@ class PostedJobDisplay extends Component {
             <h6 className="sub">{this.state.jobData.employment_type}</h6>
           </div>
           <div className="jobDiv">
-            <h6 className="head">&Acute;rea de </h6>
+            <h6 className="head">&Aacute;rea de </h6>
             <h6 className="sub">{this.state.jobData.industry}</h6>
           </div>
 

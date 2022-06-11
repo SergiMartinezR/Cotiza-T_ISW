@@ -56,6 +56,7 @@ class JobDisplay extends Component {
       .catch((err) => {
         console.log(err);
       });
+    // console.log("HOALOAALA",axios);
   }
 
   save = () => {

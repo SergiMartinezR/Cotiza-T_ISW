@@ -620,6 +620,7 @@ class JobVacancyView(viewsets.ViewSet):
         return Response({'detail': 'Job vacancy removed successfully.'}, status = status.HTTP_204_NO_CONTENT)
     
 class VacancyApplyView(views.APIView):
+    print("nada")
     def post(self, request, vacancy_id):
         vacancy = get_object_or_404(JobVacancy, id = vacancy_id)
         applicant = request.user.profile
@@ -633,7 +634,7 @@ class VacancyApplyView(views.APIView):
                 serializer.save()
                 return Response(serializer.data, status = status.HTTP_201_CREATED)
             return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
-        return Response({'detail': 'You can\'t apply on a vacancy of yours.'}, status = status.HTTP_401_UNAUTHORIZED)
+        return Response(print("hola"))
     
     def delete(self, request, vacancy_id):
         vacancy = get_object_or_404(JobVacancy, id = vacancy_id)
