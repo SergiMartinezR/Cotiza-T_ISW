@@ -673,7 +673,7 @@ class VacancyReviewView(views.APIView):
                                                  action = 'application_accepted', action_id = vacancy_id).delete()
                         except:
                             pass
-                    application.has_been_accepted = True
+                    application.has_been_accepted = False
                     application.save()
                     return Response({'detail':'Application rejected.'}, status = status.HTTP_204_NO_CONTENT)
                 return Response({'detail':'Choice to accept/reject apllication not provided.'}, status = status.HTTP_400_BAD_REQUEST)

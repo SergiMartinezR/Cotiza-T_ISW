@@ -63,7 +63,7 @@ class Login extends Component {
           this.setState({
             showAlert : true,
             alertColor : 'danger',
-            alertData : 'La constraseña es incorecta'
+            alertData : 'La contraseña es incorrecta'
           })
         }
         if(errorStatus === 404){

@@ -45,13 +45,13 @@ class AppliedJobs extends Component {
         let statusData = null;
 
         if (item.has_been_accepted === true) {
-          statusData = <h6 className="status acceptedStatus">Accepted</h6>;
+          statusData = <h6 className="status acceptedStatus">Aceptado</h6>;
         }
         if (item.has_been_accepted === false) {
-          statusData = <h6 className="status rejectedStatus">Rejected</h6>;
+          statusData = <h6 className="status rejectedStatus">Rechazado</h6>;
         }
         if (item.has_been_accepted === null) {
-          statusData = <h6 className="status pendingStatus">Pending</h6>;
+          statusData = <h6 className="status pendingStatus">Pendiente</h6>;
         }
 
         return (

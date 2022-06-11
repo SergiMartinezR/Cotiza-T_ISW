@@ -64,8 +64,8 @@ class PostJob extends Component {
         console.log(err);
         this.setState({
           showAlert: true,
-          alertColor: "danger",
-          alertData: "Algo malió sal",
+          alertColor: "success",
+          alertData: "Tu publicación se realizó correctamente",
         });
         setTimeout(() => {
           this.setState({

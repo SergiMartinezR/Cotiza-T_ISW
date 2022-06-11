@@ -169,9 +169,9 @@ class JobDisplay extends Component {
     // }
     let payData = (
       <div className="payUnavailable">
-        <h6>Pay range unavailable</h6>
+        <h6>Salario no mostrado por la empresa</h6>
         <h5>
-          <i>Salary information is not available at the moment.</i>
+          <i>La empresa no proporcionó un salario para esta vacante.</i>
         </h5>
       </div>
     );
@@ -182,32 +182,32 @@ class JobDisplay extends Component {
       payData = (
         <div className="jobDiv" style={{ marginTop: "14px" }}>
           <h6 className="head" style={{ marginBottom: "4px" }}>
-            Pay Range
+            Salario
           </h6>
           <h6 className="sub">{this.state.jobData.pay_range}</h6>
         </div>
       );
     }
 
-    let saveButton = <h6 onClick={this.save}>Save</h6>;
+    let saveButton = <h6 onClick={this.save}>Guardar</h6>;
     if (this.state.isSaved) {
       saveButton = (
         <h6
           onClick={this.unSave}
           style={{ backgroundColor: "rgb(82, 82, 255)", color: "white" }}
         >
-          Unsave
+          Eliminar
         </h6>
       );
     }
-    let applyButton = <h6 onClick={this.apply}>Apply</h6>;
+    let applyButton = <h6 onClick={this.apply}>Aplicar</h6>;
     if (this.state.isApplied) {
       applyButton = (
         <h6
           onClick={this.withdraw}
           style={{ backgroundColor: "rgb(82, 82, 255)", color: "white" }}
         >
-          Withdraw
+          Retirarse
         </h6>
       );
     }
@@ -241,12 +241,12 @@ class JobDisplay extends Component {
           <div className="strike"></div>
 
           <div className="topBottom">
-            <h6>Job</h6>
+            <h6>Título del empleo</h6>
             <ul>
               <li>
-                Number of applicants - {this.state.jobData.num_of_applicants}
+                Número de postulaciones - {this.state.jobData.num_of_applicants}
               </li>
-              <li>Employment type - {this.state.jobData.employment_type}</li>
+              <li>Tipo de empleo - {this.state.jobData.employment_type}</li>
             </ul>
           </div>
 
@@ -258,11 +258,11 @@ class JobDisplay extends Component {
           <div className="strike"></div>
 
           <div className="jobDiv" style={{ marginTop: "14px" }}>
-            <h6 className="head">Job Employment</h6>
+            <h6 className="head">Tipo de empleo</h6>
             <h6 className="sub">{this.state.jobData.employment_type}</h6>
           </div>
           <div className="jobDiv">
-            <h6 className="head">Industry</h6>
+            <h6 className="head">Área de la empresa</h6>
             <h6 className="sub">{this.state.jobData.industry}</h6>
           </div>
 

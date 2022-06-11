@@ -33,11 +33,11 @@ class LandingPage extends Component {
           <div className="service">
             <i class="fas fa-bolt"></i>
             <h6 className="serviceHead">
-              <b>Get the recognition you deserve</b>
+              <b>Consigue tus años restantes</b>
             </h6>
             <h6>
-              You're already making the right way, but which of the 28,000+
-              certifications do you have- & which matter?
+              Consigue empleo con empresas que te ofrecen años de cotización, y jubilate
+              sin problemas.
             </h6>
           </div>
 
@@ -64,27 +64,16 @@ class LandingPage extends Component {
           </div>
         </div>
 
-        <h5 className="companies">Over 1000+ company posted jobs</h5>
+        <h5 className="companies">Más de 1000 compañías han publicado ofertas de trabajo.</h5>
         <div className="banner2">
           <div className="banner2Left">
             <h6>
-              <span>The </span>
-              Imperdiet, egestas penatibus vehicula elementum cubilia. Imperdiet
-              sociosqu tempus maecenas integer neque metus posuere sollicitudin!
-              Enim ullamcorper fermentum felis nullam.
-            </h6>
-            <br />
-            <h6>
-              Imperdiet, egestas penatibus vehicula elementum cubilia. Imperdiet
-              sociosqu tempus maecenas integer neque metus
-            </h6>
-            <br />
-            <h6>
-              Imperdiet, egestas penatibus vehicula elementum cubilia. Imperdiet
-              sociosqu tempus maecenas integer neque metus. Imperdiet, egestas
-              penatibus vehicula elementum cubilia. Imperdiet sociosqu tempus
-              maecenas integer neque metusImperdiet, egestas penatibus vehicula
-              elementum cubilia.
+              <b>Objetivo</b>
+              <br/>
+              Proporcionar una alternativa de solución al problema social del desempleo 
+              de la Zona Metropolitana del Valle de México, mayores de 25 años y con años 
+              de cotización ante una Institución de Seguridad Social insuficientes para ser 
+              acreedores a una pensión que les permita jubilarse dignamente.
             </h6>
           </div>
           <div className="banner2Right">
@@ -94,7 +83,7 @@ class LandingPage extends Component {
 
         <div className="reviews">
           <div className="reviewsHead">
-            <h5 className="companies">Customer Reviews</h5>
+            <h5 className="companies">Reseñas de Clientes</h5>
           </div>
           <div className="reviewsBody">
             <div className="review">
@@ -110,19 +99,18 @@ class LandingPage extends Component {
                   />
                 </div>
                 <div>
-                  <h6 className="name">Regina Filange</h6>
-                  <h6 className="proffession">Web-Developer</h6>
+                  <h6 className="name">Perlita Perez</h6>
+                  <h6 className="proffession">Desarrollador Web</h6>
                 </div>
               </div>
               <div className="reviewBody">
                 <p>
                   <h6>
-                    hdfg 8rhfuf uhuizf iu uhdsuizhfiu hufhe fuh uihufhuefhu
-                    uhuishfuefh ydggfuw uihufheuwf wuhuish
+                    Me gustó bastante la página muy bonita y responsive.
                     <br />
                     <br />
-                    hdfg 8rhfuf uhuizf iu uhdsuizhfiu hufhe fuh uihufhuefhu
-                    uhuishfuefh ydggfuw uihufheuwf wuhuish
+                    En cuanto a los años los conseguí súper rápido, me faltaban 4 
+                    y los conseguí con 2 empresas en 3 años.
                   </h6>
                 </p>
               </div>
@@ -148,19 +136,18 @@ class LandingPage extends Component {
                   />
                 </div>
                 <div>
-                  <h6 className="name">Regina Filange</h6>
-                  <h6 className="proffession">Web-Developer</h6>
+                  <h6 className="name">Perlita Perez</h6>
+                  <h6 className="proffession">Desarrollador Web</h6>
                 </div>
               </div>
               <div className="reviewBody">
                 <p>
                   <h6>
-                    hdfg 8rhfuf uhuizf iu uhdsuizhfiu hufhe fuh uihufhuefhu
-                    uhuishfuefh ydggfuw uihufheuwf wuhuish
+                    Me gustó bastante la página muy bonita y responsive.
                     <br />
                     <br />
-                    hdfg 8rhfuf uhuizf iu uhdsuizhfiu hufhe fuh uihufhuefhu
-                    uhuishfuefh ydggfuw uihufheuwf wuhuish
+                    En cuanto a los años los conseguí súper rápido, me faltaban 4 
+                    y los conseguí con 2 empresas en 3 años.
                   </h6>
                 </p>
               </div>
@@ -169,7 +156,7 @@ class LandingPage extends Component {
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
               </div>
             </div>
 
@@ -186,19 +173,18 @@ class LandingPage extends Component {
                   />
                 </div>
                 <div>
-                  <h6 className="name">Regina Filange</h6>
-                  <h6 className="proffession">Web-Developer</h6>
+                  <h6 className="name">Perlita Perez</h6>
+                  <h6 className="proffession">Desarrollador Web</h6>
                 </div>
               </div>
               <div className="reviewBody">
                 <p>
                   <h6>
-                    hdfg 8rhfuf uhuizf iu uhdsuizhfiu hufhe fuh uihufhuefhu
-                    uhuishfuefh ydggfuw uihufheuwf wuhuish
+                    Me gustó bastante la página muy bonita y responsive.
                     <br />
                     <br />
-                    hdfg 8rhfuf uhuizf iu uhdsuizhfiu hufhe fuh uihufhuefhu
-                    uhuishfuefh ydggfuw uihufheuwf wuhuish
+                    En cuanto a los años los conseguí súper rápido, me faltaban 4 
+                    y los conseguí con 2 empresas en 3 años.
                   </h6>
                 </p>
               </div>
@@ -230,7 +216,7 @@ class LandingPage extends Component {
         <footer className="footer">
           <div className="footer1">
             <h6>Acerca de</h6>
-            <h6>FAQ</h6>
+            <h6>Preguntas frecuentes</h6>
             <h6>Politicas</h6>
             <h6>Ayuda</h6>
           </div>
@@ -240,7 +226,7 @@ class LandingPage extends Component {
             <i class="fab fa-facebook-f"></i>
           </div>
           <div className='footer3'>
-          &copy;2022-2022 by cotiza-T
+          &copy;2022-2022 hecho por Cotiza-T
           </div>
         </footer>
       </div>
