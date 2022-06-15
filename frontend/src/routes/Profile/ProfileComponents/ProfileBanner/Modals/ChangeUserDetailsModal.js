@@ -123,7 +123,7 @@ class ChangeUserDetailsModal extends Component {
           onHide={this.props.hideModal}
         >
           <div className="userEditDetails">
-            <h5>Edita tu información persoanl</h5>
+            <h5>Edita tu información personal</h5>
             <i onClick={this.props.hideModal} class="fas fa-times"></i>
             <form
               encType="multipart/form-data"

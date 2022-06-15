@@ -58,7 +58,7 @@ class LandingPage extends Component {
               <b>Contacta con empresas</b>
             </h6>
             <h6>
-              Aplica a trabajos de acuerdo a tus necesidades, o bien deja 
+              Aplica a trabajos de acuerdo a tus necesidades, o bien deja
               que las empresas te contacten por tu curriculum
             </h6>
           </div>
@@ -69,11 +69,14 @@ class LandingPage extends Component {
           <div className="banner2Left">
             <h6>
               <b>Objetivo</b>
+              <br />
               <br/>
-              Proporcionar una alternativa de solución al problema social del desempleo 
-              de la Zona Metropolitana del Valle de México, mayores de 25 años y con años 
-              de cotización ante una Institución de Seguridad Social insuficientes para ser 
-              acreedores a una pensión que les permita jubilarse dignamente.
+              <p>
+                Proporcionar una alternativa de solución al problema social del desempleo
+                de la Zona Metropolitana del Valle de México, mayores de 25 años y con años
+                de cotización ante una Institución de Seguridad Social insuficientes para ser
+                acreedores a una pensión que les permita jubilarse dignamente.
+              </p>
             </h6>
           </div>
           <div className="banner2Right">
@@ -109,7 +112,7 @@ class LandingPage extends Component {
                     Me gustó bastante la página muy bonita y responsive.
                     <br />
                     <br />
-                    En cuanto a los años los conseguí súper rápido, me faltaban 4 
+                    En cuanto a los años los conseguí súper rápido, me faltaban 4
                     y los conseguí con 2 empresas en 3 años.
                   </h6>
                 </p>
@@ -146,7 +149,7 @@ class LandingPage extends Component {
                     Me gustó bastante la página muy bonita y responsive.
                     <br />
                     <br />
-                    En cuanto a los años los conseguí súper rápido, me faltaban 4 
+                    En cuanto a los años los conseguí súper rápido, me faltaban 4
                     y los conseguí con 2 empresas en 3 años.
                   </h6>
                 </p>
@@ -183,7 +186,7 @@ class LandingPage extends Component {
                     Me gustó bastante la página muy bonita y responsive.
                     <br />
                     <br />
-                    En cuanto a los años los conseguí súper rápido, me faltaban 4 
+                    En cuanto a los años los conseguí súper rápido, me faltaban 4
                     y los conseguí con 2 empresas en 3 años.
                   </h6>
                 </p>
@@ -208,7 +211,7 @@ class LandingPage extends Component {
           </div>
           <div>
             <NavLink to='/userSignup/register'>
-            <button className="btn btn-light">Publicar un trabajo</button>
+              <button className="btn btn-light">Publicar un trabajo</button>
             </NavLink>
           </div>
         </div>
@@ -226,7 +229,7 @@ class LandingPage extends Component {
             <i class="fab fa-facebook-f"></i>
           </div>
           <div className='footer3'>
-          &copy;2022-2022 hecho por Cotiza-T
+            &copy;2022-2022 hecho por Cotiza-T
           </div>
         </footer>
       </div>
